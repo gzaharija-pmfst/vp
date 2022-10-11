@@ -7,6 +7,7 @@ const crtajGraf = async () => {
 
   // Metoda za pristup podacima temperature
   const yAccessor = data => (data.temperatureMax - 32) * 0.5556;
+  const yAccessorMin = data => (data.temperatureMin - 32) * 0.5556;
   // Definiramo metodu prema obliku zapisa datuma
   const dateParser = d3.timeParse("%Y-%m-%d");
   const xAccessor = data => dateParser(data.date);
@@ -44,10 +45,11 @@ const crtajGraf = async () => {
       "transform",
       `translate(${dimenzije.margin.left}px, ${dimenzije.margin.top}px)`
     );
-
+  console.log(d3.min(dataset, yAccessor))
   // Mjerilo za Y os
   const yMjerilo = d3.scaleLinear()
-    .domain(d3.extent(dataset, yAccessor))
+    //.domain(d3.extent(dataset, yAccessor))
+    .domain([d3.min(dataset, yAccessorMin), d3.max(dataset, yAccessor)])
     .range([dimenzije.boundsHeight, 0]);
 
   // Mjerilo za X os
@@ -60,6 +62,10 @@ const crtajGraf = async () => {
   const generatorLinije = d3.line()
       .x(data => xMjerilo(xAccessor(data)))
       .y(data => yMjerilo(yAccessor(data)));
+
+  const generatorLinijeMin = d3.line()
+    .x(data => xMjerilo(xAccessor(data)))
+    .y(data => yMjerilo(yAccessorMin(data)));
 
   const granicaNule = yMjerilo(0);
   const oznakaNule = granice.append("rect")
@@ -77,11 +83,16 @@ const crtajGraf = async () => {
     .attr("height", granicaVruce)
     .attr("fill", "#ffcccb")
 
-  const linija = granice
-    .append("path")
+  const linija = granice.append("path")
     .attr("d", generatorLinije(dataset))
     .attr("fill", "none")
     .attr("stroke", "#00b30b")
+    .attr("stroke-width", 2);
+
+  const linija2 = granice.append("path")
+    .attr("d", generatorLinijeMin(dataset))
+    .attr("fill", "none")
+    .attr("stroke", "#ff6863")
     .attr("stroke-width", 2);
 
   const yOsGenerator = d3.axisLeft()
