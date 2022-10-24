@@ -3,9 +3,9 @@ async function crtajScatter() {
   let dataset = await d3.json("vrijeme.json");
   console.log(dataset[0]);
 
-  const xAccessor = data => (data.dewPoint - 32) * 0.5556;
+  const xAccessor = (data) => (data.dewPoint - 32) * 0.5556;
   //const xAccessor = data => data.dewPoint;
-  const yAccessor = data => data.humidity;
+  const yAccessor = (data) => data.humidity;
 
   const sirina = d3.min([window.innerWidth * 0.9, window.innerHeight * 0.9]);
 
@@ -38,31 +38,90 @@ async function crtajScatter() {
     )`
   );
 
-  const xSkala = d3.scaleLinear()
+  const xSkala = d3
+    .scaleLinear()
     .domain(d3.extent(dataset, xAccessor))
     .range([0, dimenzije.grSirina])
-    .nice()
+    .nice();
 
-  console.log(xSkala.domain())
+  console.log(xSkala.domain());
 
-  const ySkala = d3.scaleLinear()
+  const ySkala = d3
+    .scaleLinear()
     .domain(d3.extent(dataset, yAccessor))
     .range([dimenzije.grVisina, 0])
-    .nice()
+    .nice();
 
-  console.log(ySkala.domain())
+  console.log(ySkala.domain());
 
-/*   granice.append("circle")
+  /*   granice.append("circle")
     .attr("cx", dimenzije.grSirina / 2)
     .attr("cy", dimenzije.grVisina / 2)
     .attr("r", 5) */
 
-    dataset.forEach(dp => {
+  /*     dataset.forEach(dp => {
       granice
         .append("circle")
         .attr("cx", xSkala(xAccessor(dp)))
         .attr("cy", ySkala(yAccessor(dp)))
         .attr("r", 3);
-    });
+    }); */
+
+  const tocke = granice
+    .selectAll("circle")
+    .data(dataset)
+    .enter()
+    .append("circle")
+    .attr("cx", (dp) => xSkala(xAccessor(dp)))
+    .attr("cy", (dp) => ySkala(yAccessor(dp)))
+    .attr("r", 3)
+    .attr("fill", "#6495ed");
+
+  console.log(tocke);
+
+  /*     const crtajTocke = (podaci, boja) => {
+      const tocke = granice.selectAll("circle").data(podaci)
+      
+      tocke.join("circle")    
+      .attr("cx", d => xSkala(xAccessor(d)))
+      .attr("cy", d => ySkala(yAccessor(d)))
+      .attr("r", 4)
+        .attr("fill", boja)
+    }
+
+    crtajTocke(dataset.slice(0,200), "darkgrey")
+
+    setTimeout( ()=> {
+      crtajTocke(dataset, "blue")
+    }, 1000) */
+
+  const xOsGen = d3.axisBottom().scale(xSkala);
+  const xOs = granice
+    .append("g")
+    .call(xOsGen)
+      .style("transform", 
+      `translateY(${dimenzije.grVisina}px)`);
+  
+  const xOsOznaka = xOs.append("text")
+    .attr("x", dimenzije.grSirina / 2)
+    .attr("y", dimenzije.margine.bottom - 10)
+    .attr("fill", "black")
+    .style("font-size", "1.5em")
+    .html("Temperatura rosišta (&deg;C)")
+
+  const yOsGen = d3.axisLeft()
+    .scale(ySkala)
+    .ticks(4)
+  const yOs = granice.append("g")
+    .call(yOsGen)
+
+  const yOsOznaka = yOs.append("text")
+    .attr("x", -dimenzije.grVisina / 2)
+    .attr("y", -dimenzije.margine.left + 15)
+    .attr("fill", "black")
+    .style("font-size", "1.5em")
+    .html("Relativna vlažnost")
+    .style("transform", "rotate(-90deg)")
+    .style("text-anchor", "middle")
 }
 crtajScatter();
