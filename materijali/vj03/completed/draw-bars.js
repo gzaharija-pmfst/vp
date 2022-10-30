@@ -1,7 +1,7 @@
 async function drawBars() {
 
   // 1. Access data
-  const dataset = await d3.json("./../../my_weather_data.json")
+  const dataset = await d3.json("../vrijeme.json")
 
   const metricAccessor = d => d.humidity
   const yAccessor = d => d.length
@@ -53,6 +53,7 @@ async function drawBars() {
     .thresholds(12)
 
   const bins = binsGenerator(dataset)
+  console.log(bins)
 
   const yScale = d3.scaleLinear()
     .domain([0, d3.max(bins, yAccessor)])
@@ -62,10 +63,15 @@ async function drawBars() {
   // 5. Draw data
 
   const binsGroup = bounds.append("g")
+  console.log(binsGroup)
 
   const binGroups = binsGroup.selectAll("g")
     .data(bins)
     .enter().append("g")
+
+    console.log(binGroups)
+
+
 
   const barPadding = 1
   const barRects = binGroups.append("rect")
