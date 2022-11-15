@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>vp_v04</title>
+
+		<meta name="description" content="Vizualizacija Podataka - Uvodno predavanje">
+
+		<link rel="stylesheet" type="text/css" href="../lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-merriweather theme-color-silver-green">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="5b8a4a036e8598747befd838862d256d"><section data-id="f983f7445a8cbe89dfd9ae67e07fb21b" data-background-opacity="0.25" data-background-image="vp_v04-54966e/a83adfb3e588cd9d9e18ec53aefc8415"><div class="sl-block" data-block-type="text" style="width: 876px; left: 41px; top: 178px; height: auto;" data-block-id="c6f3506a951073356126072c64b73ba7"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 12; padding: 20px; line-height: 1.04;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<h1>Vizualizacija podataka</h1>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-a5c0c7" style="width: auto; height: auto; left: 323px; top: 326px;" data-block-id="1ae6f23f85340701e19030440fd20e20"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="314" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="314" height="1" viewbox="0 0 314 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="314" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0" x2="314" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 877px; left: 41px; top: 326px; height: auto;" data-name="text-d18e72" data-block-id="689a62ac335c3e0957668b823ebb6c68"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 14; text-align: center; color: rgb(0, 0, 0); font-size: 120%; padding: 20px;" data-placeholder-text="Text">
+<p>Vježba 04</p>
+</div></div></section><section data-id="f1b24faa29e4587c93d6d2bdaa0d05d4"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="8af19301c437a0c2cd5ac1932b93911d">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Vježba 04</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="4a50f3a040a3fdf8f9482654901bb1a9">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="7d7b6bbeada2f231ebedb9eb87772feb">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 284px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="1f931699ed1eb5fd2d5669bc20a62cf5">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Vidjeli smo na primjerima iz prethodnih vježbi kako možemo mijenjati/osvježavati podatke koje prikazujemo</li>
+                    <li>U takvim slučajevima je korisno animirati promjenu elemenata tj. prijelaz sa stare vrijednosti na novu</li>
+                    <li>Postoji nekoliko načina kako animirati naše grafove
+                        <ul>
+                            <li>korištenjem SVG elementa <span style="color:#00b30b"><strong><em>&lt;animate&gt;</em></strong></span>
+</li>
+                            <li>korištenjem CSS svojstva <span style="color:#00b30b"><strong><em>transition</em></strong></span>
+</li>
+                            <li>korištenjem metode <span style="color:#00b30b"><strong><em>d3.transition()</em></strong></span>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="a08fd51eaecc5238c693b706edc4e072">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="9021d20e429a7ecac4abc96da35e8405"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="cdce2408a11bd49076a27295dacfbb5f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>SVG &lt;animate&gt;</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="315196adf026a357eaa8a7078e36028f">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="6eca1b230f851734d322e5ee7cf38a64">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 252px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="9c4d64205bc71ad3ab49a0cd0826ffac">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Započet ćemo sa SVG <em>&lt;animate&gt;</em> elementom
+	<ul>
+		<li>otvorite datoteku "<em>index.html</em>" iz mape "primjer01"</li>
+		<li>imamo početni SVG &lt;rect&gt; element</li>
+	</ul>
+	</li>
+	<li>SVG &lt;animate&gt; element se može dodati unutar elementa kojeg želimo animirati
+	<ul>
+		<li>dodati ćemo animaciju kretanja po <em>x </em>osi</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="c107aa502716d98f47793e32cbe07703">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 747.865px; height: auto; left: 106.067px; top: 410.919px;" data-block-id="71af7e4803644081ccd0efe0703ca730">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="xml"><code data-line-numbers="" style="padding: 15px;">&lt;svg width="120" height="120"&gt;
+  &lt;rect x="10" y="10" width="100" height="100" fill="cornflowerblue"&gt;
+    &lt;animate
+      attributeName="x"
+      values="0;20;0"
+      dur="2s"
+      repeatCount="indefinite"
+    /&gt;
+  &lt;/rect&gt;
+&lt;/svg&gt;</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="d5860e561d35308ba02cc0ac504b15f5"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="98413860eab2d6e2a0dc0c4901baa2ab">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>SVG &lt;animate&gt;</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="b95985921f3ecbacb1bc01714d9b62aa">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="a577a87a5aa31123abb2124f8f8c6af4">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 119.531px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 90.0315px; height: auto;" data-name="text-c5947b" data-block-id="4b3d168284ff9fedce2c87346013b814">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Elementu možemo dodati i više animacija</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="45459aee5f240d42fffd25babb06e234">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 774px; height: auto; left: 93px; top: 195.5px;" data-block-id="6664152bf81b7677e75fbab1e0f6e65e">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="none"><code data-line-numbers="6-11" style="padding: 15px;">&lt;svg width="320" height="320"&gt;
+   &lt;rect x="100" y="100" width="100" height="100" fill="cornflowerblue"&gt;
+    &lt;animate
+       
+    /&gt;
+    &lt;animate
+      attributeName="fill"
+      values="cornflowerBlue;maroon;cornflowerBlue"
+      dur="6s"
+      repeatCount="indefinite"
+    /&gt;
+  &lt;/rect&gt;
+&lt;/svg&gt;</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="b86909936ec70fb14ad59042c09b42c0" data-name="group-c10fda">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 613.665px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 537.165px; height: auto;" data-origin-id="4b3d168284ff9fedce2c87346013b814" data-block-id="13c77e755c5cd20acad627ea0c800c70" data-name="text-b715a0">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>SVG &lt;animate&gt; nije podržan od strane svih preglednika</li>
+	<li>Moramo zadati statičke vrijednosti početka i kraja
+	<ul>
+		<li>želimo animirati promjene između dinamičkih vrijednosti</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div></section><section data-id="b32032a43f89a8e5fa404cac7b0ccbbf"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="64d4916296e9d00e1fc7b3a4001e8d50">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>CSS <em>transition</em></strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="b7aeddc9343cc5f4b98117e57dd41a7b">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="b38aa3b21374e6c1ea945e4ad5687a1a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 268px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 105px; height: auto;" data-name="text-c5947b" data-block-id="0cbddbefd11fdbe3414d9e3825706923">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Promjene grafa možemo animirati CSS svojstvom <span style="color:#00b30b"><strong><em>transition</em></strong></span>
+</li>
+	<li>Kada osvježimo boju &lt;rect&gt; elementa iz plave u crvenu možemo odrediti da promjena traje 10 sekundi
+	<ul>
+		<li>element će automatski prikazati međuvrijednosti</li>
+	</ul>
+	</li>
+	<li>Naravno, ne mogu se sve promjene animirati</li>
+	<li>Otvorite mapu "<em>primjer02</em>" u kojoj imamo HTML i CSS datoteke
+	<ul>
+		<li>u CSS-u imamo zadano oblikovanje <em>div </em>elementa</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="9312018004dabd0c78a875ce0712e647">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 348.515px; height: auto; left: 125.112px; top: 496.551px;" data-block-id="75126e044568c9c5ed0381276ec21652">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="none"><code data-line-numbers="" style="padding: 15px;">.kvadrat {
+  background: cornflowerblue;
+  height: 100px;
+  width: 100px;
+}</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 263.838px; height: 157px; left: 577.217px; top: 496.551px; min-width: 1px; min-height: 1px;" data-name="image-70ba73" data-block-id="14db83e1a6f98153c7fc240da70a2e52">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="405" data-natural-height="241" data-lazy-loaded="" data-src="vp_v04-54966e/31d7c33a2b57b535b93b2c778c4c9fe2.png"></div>
+    </div>
+</div></section><section data-id="aeef90d184566838e4b21be5f737695c"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="6ba76fff0221f84c0811bde7dfcff336">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>CSS <em>transition</em></strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="6f925a10aa3277d03c2197711ef298a3">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="c5eb5dbf4a83ff30c0d229cbb6e638d5">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 194px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 105px; height: auto;" data-name="text-c5947b" data-block-id="1580655f72399afb4c62326b6479d6ff">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Dodati ćemo pseudo-klasu <strong><span style="color:#00b30b"><em>:hover</em></span></strong> na naš element i promijeniti oblikovanje elementa - druga boja i translacija po <em>x</em> osi</li>
+                    <li>Kako promjena ne bi bila trenutna, moramo dodati svojstvo <span style="color:#00b30b"><em>transition-duration</em></span> na cijeli element</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="57cf9976d28b7ea2c7f4809ccdfc61d1">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 428.795px; height: auto; left: 265.603px; top: 317.888px;" data-block-id="ff6172feeaf5fd4fe0bce6d80bddaac2">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="8-11,5" style="padding: 15px;">.kvadrat {
+  background: cornflowerblue;
+  height: 100px;
+  width: 100px;
+  transition-duration: 1s;
+}
+
+.kvadrat:hover{
+  background-color: yellowgreen;
+  transform: translateX(30px);
+}</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="4c860b745da6d065f6306f8a68827e8a"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="7b4c346b6b7f88cb9b66c0545b61be8b">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>CSS <em>transition</em></strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="c547fd5adca884a771d9d075df46c02f">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="b0486c297a15856faf6e2ede71ed7ba1">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 132.423px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 82.923px; height: auto;" data-name="text-c5947b" data-block-id="479eb6341951bd7080ee8e5eaedaee51">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Ako želimo instant promjenu boje, a postupno pomicanje to možemo kontrolirati sa svojstvom <span style="color:#00b30b"><em>transition-property</em></span>
+</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="e677865e661e4a028faf2f2657136b31">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 718.807px; height: auto; left: 120.596px; top: 182.5px;" data-block-id="c6100b60ad01e217f67a3b001c6c0820">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="6" style="padding: 15px;">.kvadrat {
+  background: cornflowerblue;
+  height: 100px;
+  width: 100px;
+  transition-duration: 1s;
+  transition-property: transform; /* "all" je zadana vrijednost */
+}</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="807888533266a7632c68daf12046caa2" data-name="group-fdd410">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 470.937px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 401.937px; height: auto;" data-origin-id="479eb6341951bd7080ee8e5eaedaee51" data-block-id="4d8e9079699e7ecb563fb1c4131c0374" data-name="text-142c7f">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Naravno, isti učinak možemo postići i sa skraćenim zapisom <span style="color:#00b30b"><em>transition</em> </span>koji prima tri vrijednosti - svojstvo, trajanje i vrsta animacije</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 421.77px; height: auto; left: 284.167px; top: 506.057px;" data-block-id="28e59ce1449f21fc92dc31bc44be405d" data-name="code-18770d">
+    <div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 18; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="5" style="padding: 15px;">.kvadrat {
+  background: cornflowerblue;
+  height: 100px;
+  width: 100px;
+  transition: transform 1s steps(6);
+}</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="2880c586ce7d49bde2ec13328741e87e"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="7a43e0cc65073aa7e064e0e8e31956b9">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>CSS <em>transition</em></strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="f0fcb93f52c4056de064aed14bcbc875">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="4270dc6e29da7d4a6ff6c43788c39191">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 179.423px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 82.923px; height: auto;" data-name="text-c5947b" data-block-id="9814e9297b500e0ae2ef32c7f91b8cac">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Istom elementu možemo definirati i različite tranzicije
+	<ul>
+		<li>ako želimo imati jednu vrstu animacije za promjenu položaja, a drugu za promjenu pozadine - dovoljno je napisati dva izraza odvojena zarezom</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="f0a58f07ff992f037d8c077494271b3f">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 652.309px; height: auto; left: 132.846px; top: 299.067px;" data-name="code-18770d" data-block-id="efa37de70ecbc98c5ac88db612031913">
+    <div class="sl-block-style" style="z-index: 20; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 20; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="5" style="padding: 15px;">.kvadrat {
+  background: cornflowerblue;
+  height: 100px;
+  width: 100px;
+  transition: transform 1s steps(6), background 2s ease-out;
+}</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="86e8c0fcaba8656d37055d19db07d9a2"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="fe278c8380a4b5bef7ed63fc03a21073">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>CSS <em>transition</em></strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="a23e9d78e72b76dc8fee4801088fea33">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="e0568a356cc9fd15e5cc58ecf91c2744">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 179.423px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 82.923px; height: auto;" data-name="text-c5947b" data-block-id="87b3ad527816f9a8da85c7fa0bbb558a">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Chrome Dev Tools ima ugrađeni alat za pregled animacija
+                        <ul>
+                            <li>dok je otvorena "<span style="color:#00b30b"><em>Elements</em></span>" kartica pritisnite tipku "ESC" na tipkovnici kako bi otvoriti donji izbornik</li>
+                            <li>u njemu otvorite karticu "<span style="color:#00b30b"><em>Animations</em></span>"</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="ff7b2a14c30a5dc47b92eec47a368c2f">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 681.747px; height: 420px; left: 139.127px; top: 280px; min-width: 1px; min-height: 1px;" data-name="image-9c4d1c" data-block-id="a420abf6f2c312b92a6d20ecd75b9c32">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="1245" data-natural-height="767" data-lazy-loaded="" data-src="vp_v04-54966e/b54ff1b08d81fe9b83eb4ead17371cfa.png"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 467.305px; top: 514.224px;" data-name="line-465b03" data-block-id="dd7a4a5d5fe5850cd0ecb6d10db53bd8">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="353.569" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;" data-line-width="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="353.569" height="1" viewbox="0 0 353.569 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5" y1="0.5" x2="354.069" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="5" x1="0.5" y1="0.5" x2="354.069" y2="0.5"></line></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 820.874px; top: 514.224px;" data-name="line-b040d3" data-block-id="5395acfbead9143a3aa5544b519e4b2c">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="186.6861483823759" data-line-x2="0" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;" data-line-width="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="186.6861483823759" viewbox="0 0 1 186.6861483823759"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5" y1="187.1861483823759" x2="0.5" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="5" x1="0.5" y1="187.1861483823759" x2="0.5" y2="0.5"></line></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 467.305px; top: 514.224px;" data-name="line-95ac2f" data-block-id="bc97f7fc43e9431e39e8b3b8cdc88467">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="0" data-line-y2="186.6861483823759" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;" data-line-width="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="186.6861483823759" viewbox="0 0 1 186.6861483823759"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5" y1="0.5" x2="0.5" y2="187.1861483823759"></line><line class="line-element" stroke="#00b30b" stroke-width="5" x1="0.5" y1="0.5" x2="0.5" y2="187.1861483823759"></line></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 467.305px; top: 700.91px;" data-name="line-bf7c00" data-block-id="b99c6a53e47a123bfef458ad448f6357">
+    <div class="sl-block-content" data-line-x1="353.569" data-line-y1="0" data-line-x2="0" data-line-y2="0.00014838237598269188" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 20;" data-line-width="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="353.569" height="1" viewbox="0 0 353.569 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="354.069" y1="0.5" x2="0.5" y2="0.5001483823759827"></line><line class="line-element" stroke="#00b30b" stroke-width="5" x1="354.069" y1="0.5" x2="0.5" y2="0.5001483823759827"></line></svg></div>
+</div></section><section data-id="a776e5ab6118bc816071e7fe82940a08"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="348120348bf85bef981fe522559c83db">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Animiranje grafa</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="c12067cd0d67bb7648cf0243d4f12363">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="ae3542c7f2db5e300d0c9a1c0f3bc99b">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 265.999px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="40544eb08b635ec59db3194dba4d70e5">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Sada ćemo pogledati kako iskoristiti CSS transition svojstvo za animiranje grafova koje smo napravili pomoću d3.js</li>
+	<li>Otvorite mapu "<em>primjer03</em>" koja sadrži već poznate datoteke:
+	<ul>
+		<li>
+<em>index.html</em> - uključivanje CSS i JS te prazni div "okvir"</li>
+		<li>
+<em>bar_domaci.js</em> - rješenje prethodnog domaćeg</li>
+		<li>
+<em>stil.css</em> - oblikovanje stranice</li>
+	</ul>
+	</li>
+	<li>Za početak ćemo pokrenuti primjer i vidjeti kako radi stranica:
+	<ul>
+		<li>za razliku od domaćeg ne iscrtavamo sve grafove odjednom nego uz pomoć <em>button</em> elementa prelazimo na idući...</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="131ba98cdf0ee53a0d5f26ae85b87b26">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 468.366px; height: 214.124px; left: 245.817px; top: 467.999px; min-width: 1px; min-height: 1px;" data-name="image-2e0c4a" data-block-id="2bc129ea31842526e65b48af044ae682"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="1004" data-natural-height="459" data-lazy-loaded="" data-src="vp_v04-54966e/3c7324dec5ab2fa256daf170404075a3.png"></div></div></div></section><section data-id="3f08ab38a48ce6c27ad325098b95feda"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="6647f4d6d0ef2ac1ffd9ac1a7d7c3a64">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Animiranje grafa</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="b523afc2b84122133873b5b22e08735b">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="ea7574f3518cf0b7cd7b0d15976c5763">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 140.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="882919485d3e5269bd3dcad6ece6a3d5">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>U odnosu na prethodne vježbe možemo izdvojiti par noviteta
+	<ul>
+		<li>prilikom dodavanja SVG &lt;g&gt; elemenata dodjeljujemo im <em>class</em> atribute kako bi ih mogli oblikovati pomoću CSS-a</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="ac804da9e7926d0a3654c87cb1f71120">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 652.309px; height: auto; left: 153.846px; top: 224px;" data-name="code-18770d" data-block-id="9721efbb7272cd2f9f0cd12b3c98e0d3">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">/*  staticki elementi grafa */
+granice.append("g")
+  .attr("class", "kosare")
+granice.append("line")
+  .attr("class", "prosjek")
+granice.append("g")
+  .attr("class", "x-os")
+  .style("transform", `translateY(${dimenzije.grVisina}px)`)
+.append("text")
+  .attr("class", "x-os-oznaka")</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 442.897px; height: 165.419px; left: 258.552px; top: 510.493px; min-width: 1px; min-height: 1px;" data-name="image-7da0d8" data-block-id="4cf566f47d005ad035cb326f30db6184"><div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="498" data-natural-height="186" data-lazy-loaded="" data-src="vp_v04-54966e/1eefda3260c61a06c7798d3bb291d1b5.png"></div></div></div></section><section data-id="c69727b579ed45047df1611efda70649"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="efef4fe39e3f8d742c6fea5d8f56cc6f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Animiranje grafa</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="c87502d8fa8ace54536f4de7ce8a2ce1">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="a3bf4be417d47822da4c5d3cf175a817">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 219.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="08f311247b488800fd2159bc116f7903">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Druga zanimljivost je način osvježavanja podataka
+	<ul>
+		<li>odabiremo sve pojedinačne "košare" i pridružujemo novi skup podataka</li>
+		<li>uklanjamo košare koje više nisu u skupu podataka</li>
+		<li>dohvaćamo nove podatke i dodajemo iz u zajedničku grupu</li>
+		<li>stvaramo prazne &lt;rect&gt; i &lt;text&gt; elemente za svaku košaru</li>
+		<li>spajamo nove elemente sa postojećom selekcijom</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="73a61066dabdc4fdec60f86a75683483">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 547.603px; height: auto; left: 185.199px; top: 381.109px;" data-name="code-18770d" data-block-id="b80e55573317f82b1db07edf961ffff2">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">let sveKosare = granice.select(".kosare")
+  .selectAll(".kosara")
+  .data(kosare)
+
+sveKosare.exit().remove()
+
+const noveKosare = sveKosare.enter().append("g")
+  .attr("class", "kosara")
+
+noveKosare.append("rect")
+noveKosare.append("text")
+
+sveKosare = noveKosare.merge(sveKosare)</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="aa91e1a80d100bc0a68dcd5917694b2d"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="1766e63fceb599886fcf21250dcb4cdc">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Animiranje grafa</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="ec48bc87b54443b12a41e27d0a064c6c">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="bab3ec97f4e5b83a5e4b3e18bae9af91">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 113.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="e29426b84f621a58265ff202d94fd194">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Nakon pridruživanja novih podataka, izračun veličine stupaca i dodavanje oznaka je gotovo identično kao prije...</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="5a18c4dbbee3a9c46624c479fb84db1f">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 811.603px; height: auto; left: 74.1985px; top: 199px;" data-name="code-18770d" data-block-id="6399fc3ea88474cf2fc4303eb4706d81">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">sveKosare = noveKosare.merge(sveKosare)
+
+const stupciGrafa = sveKosare.select("rect")
+    .attr("x", d =&gt; xSkala(d.x0) + barPadding)
+    .attr("y", d =&gt; ySkala(yAccessor(d)))
+    .attr("width", d =&gt; d3.max([0, xSkala(d.x1) - xSkala(d.x0) - barPadding]))
+    .attr("height", d =&gt; dimenzije.grVisina - ySkala(yAccessor(d)))
+
+const stupacTekst = sveKosare.select("text")
+    .attr("x", d =&gt; xSkala(d.x0) + (xSkala(d.x1) - xSkala(d.x0)) / 2)
+    .attr("y", d =&gt; ySkala(yAccessor(d)) - 5)
+    .text(yAccessor)
+
+const srVr = d3.mean(dataset, metrikaAccessor)
+
+const srednjaPravac = granice.selectAll(".prosjek")
+    .attr("x1", xSkala(srVr))
+    .attr("x2", xSkala(srVr))
+    .attr("y1", -20)
+    .attr("y2", dimenzije.grVisina)</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="78894f0669f2d770a42323155d6e4d98"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="e74f5de3b2710c13e97cfbb41341fe0b">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Animiranje grafa</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="c342e0f17d905d12f66246a549c4d93b">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="f57bc840252c408a3d5729004761636b">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 120.999px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="fc3b5b4d3f934d8dc0b0f59b600edcd9">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Promjena metrika nam radi ali bez animacije
+	<ul>
+		<li>iskoristiti ćemo <em>transition</em> svojstvo nad <em>rect</em> elementima</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="b3682947abddde4932d8ed5ca1b4056b">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 369.059px; height: auto; left: 295.47px; top: 187.999px;" data-name="code-18770d" data-block-id="8ca7ed477b5bfe382eba9f38be7b835c">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="" style="padding: 15px;">.kosara rect {
+    fill: cornflowerblue;
+    transition: all 1s ease-out;
+}</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="276bf3cd01d2b1823f6ec3057f563f49" data-name="group-4fa710">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 408px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 358.5px; height: auto;" data-origin-id="fc3b5b4d3f934d8dc0b0f59b600edcd9" data-block-id="8e7d51141fde05672cded826558fbff1" data-name="text-f52c30">
+            <div class="sl-block-content fragment" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text" data-fragment-index="0">
+<ul>
+	<li>Vizualno izgleda zanimljivo ali želimo naglasiti promjene u visini i <em>y</em> poziciji stupaca</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 555.71px; height: auto; left: 202.144px; top: 490px;" data-block-id="09b8abda278b28689837dd9eb6344f1a" data-name="code-a87c8b">
+    <div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 18; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="" style="padding: 15px;">.kosara rect {
+    fill: cornflowerblue;
+    transition: height 1s ease-out, y 1s ease-out;
+}</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 752.532px; left: 103.733px; top: 670.032px;" data-name="text-57d787" data-block-id="d7707317a28700a57fa7b54c76ba872a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; font-size: 60%; color: rgb(0, 179, 11);">
+<p>*Neke verzije Firefox preglednika ne podržavaju <em>height</em>  SVG elementa kao CSS svojstvo</p>
+</div></div></section><section data-id="d3c81171d052c8369d7859e05c892356"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="eb0015ce8bf04ae651814d1ce6817c60">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Animiranje grafa</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="a498b9ef8e920c1abe99c6f397767a97">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="dc8670325601245ffe4f3a0e3b33c634">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 93.4994px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="8cc00015ffcc47469ee61a318416f75b">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Ako pokušamo animirati <em>y</em> svojstvo natpisa, neće biti učinka</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="a7529baffabe3b4b5bef353e603b05ab">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 369.059px; height: auto; left: 295.471px; top: 127.999px;" data-name="code-18770d" data-block-id="12f5f9ecda1cc24720c762d22d137e69">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="" style="padding: 15px;">.kosara text{
+    transition: y 1s ease-out;
+}</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-name="group-4fa710" data-block-id="aa6d92225cad38418e3e3b33fbf3844f">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 348.499px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 251.999px; height: auto;" data-name="text-f52c30" data-block-id="0b3eca8e75ad721b663f40a03fe1371c">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Problem je što nisu sva SVG svojstva podržana u CSS-u
+	<ul>
+		<li>kod <em>rect</em> elementa možemo animirati <em>y</em>, a kod <em>text</em> ne</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="0">Da bi riješili taj problem, možemo <em>y </em>poziciju natpisa podesiti preko <em>translate</em> svojstva, a ne sa <em>y</em> atributom</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 892px; height: auto; left: 34px; top: 449.999px;" data-name="code-a87c8b" data-block-id="090bf61a428166c7db31a0eb33193638">
+    <div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 18; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="3" style="padding: 15px;">const stupacTekst = sveKosare.select("text")
+    .attr("x", d =&gt; xSkala(d.x0) + (xSkala(d.x1) - xSkala(d.x0)) / 2)
+    .attr("y", 0).style("transform", d =&gt; `translateY(${ySkala(yAccessor(d)) - 5}px)`)
+    .text(yAccessor)</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="83311c7fd97c9545503dc481a7a4bb1a" data-name="group-0491c0">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 643.418px; z-index: 19;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 613.918px; height: auto;" data-origin-id="8cc00015ffcc47469ee61a318416f75b" data-block-id="17ec78b25995a0cd0f05ebf73eb8e133" data-name="text-8f5692">
+            <div class="sl-block-content fragment" data-placeholder-tag="p" style="text-align: left; z-index: 20; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text" data-fragment-index="1">
+<ul>
+	<li>Sada u CSS animiramo <em>transform</em>
+</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 387.122px; height: auto; left: 538.878px; top: 618.918px;" data-block-id="ebb4a097115821858ed782f488eb6d48" data-name="code-6e5ea4">
+    <div class="sl-block-style" style="z-index: 21; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="none" style="z-index: 21; border-color: rgb(0, 179, 11); border-style: solid; border-radius: 10px;" data-code-autoheight="true" data-fragment-index="1">
+            <pre style="font-size: 16px; line-height: 19px;" class="ruby"><code style="padding: 15px;">transition: transform 1s ease-out;</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="440ca4bed4cdaad0515098d543bbfba9"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="7ddb799964fe0151e89d0f01cfa126ff">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Animiranje grafa - zadatak</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="2cfde8eeb09533dfa9ef269d112948bf">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="669e31b5994fd353de5a42f2d24b6eed">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 140.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="face35873786d51efb97590f65e0c102">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Pokušajte na isti način animirati liniju prosjeka
+	<ul>
+		<li>SVG svojstva <em>line</em> elementa ne možemo animirati CSS-om</li>
+		<li>dovoljno je translatirati (i animirati) <em>x</em> koordinate</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="6b77bd72aeafd3c4cb537bdc156fcb5d">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 585.816px; height: auto; left: 187.092px; top: 286.437px;" data-name="code-18770d" data-block-id="62b580866890b7e82ce372cd482ac3ee">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const srednjaPravac = granice.selectAll(".prosjek")
+  .attr("y1", -20)
+  .attr("y2", dimenzije.grVisina)
+  .style("transform", `translateX(${xSkala(srVr)}px)`)</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 407.193px; height: auto; left: 276.404px; top: 473px;" data-block-id="2c803fa041ea78e78da27a615b12fb80" data-name="code-dedcf9">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="css"><code data-line-numbers="1,4" style="padding: 15px;">.prosjek {
+  stroke: maroon;
+  stroke-dasharray: 2px 4px;
+  transition: transform 1s ease-out;
+}</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="c5c72cd95fb434104dd7ca29d25bdc36"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="cf8d780be9983a094d6142f46a953f6f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="bc89671d7eb9f5762ac65b864a231f6b">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="e6b6321033015e7af8953e4d67d5a3d3">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 305.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="09fda44daa833b19fbd3c93db81cc436">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>CSS tranzicije su prikladan alat kod jednostavnijih animacija
+	<ul>
+		<li>u nekim situacijama nisu korisne - (npr. CSS ne može znati je li oznaka "10" manja ili veća od oznake "100")</li>
+	</ul>
+	</li>
+	<li>Možemo koristiti <span style="color:#00b30b"><em>d3.transition()</em></span> metodu iz <u><a href="https://github.com/d3/d3-transition" target="_blank">d3-transition</a></u> modula</li>
+	<li>Ova metoda je prikladna kada:
+	<ul>
+		<li>želimo uskladiti više animacija</li>
+		<li>želimo pokrenuti neki događaj na kraju animacije</li>
+		<li>želimo animirati nešto što nije CSS svojstvo</li>
+		<li>želimo uskladiti promjenu elemenata sa animacijom</li>
+		<li>želimo vlastiti način animacije</li>
+		<li>se može dogoditi prekid usred tranzicije</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="b2011ccb4de8ee660d0d8eb47c0958e4">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="e3ae97638486de37e208cf7aba37dc65"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="e14bd6947730fb9ea60a5131606db014">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="ccdf66336937a94cf88c83e8ed53c8ab">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="4c649eab6b1d8bd7420bc522e835f5d5">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 199.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="622d07408d444fb0220d8ed5f41ffc6f">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Otvorite mapu "primjer04" i datoteku "bar_domaci.js"
+	<ul>
+		<li>primjer je jedan prethodnome, prije početka animiranja</li>
+	</ul>
+	</li>
+	<li>U dijelu kôda u kojem odabiremo definiramo stupce grafa iskoristiti ćemo <em>transition() </em>metodu kako bi selekciju pretvorili u transition objekt</li>
+	<li>Krenimo od postojeće selekcije koju ćemo ispisati na konzolu</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="b7b7460c092d153c96886de3ba8e1405">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 821.639px; height: auto; left: 80px; top: 432.389px;" data-name="code-18770d" data-block-id="778d89fbf2969d0c5c8455c262505908">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const stupciGrafa = sveKosare.select("rect")
+    .attr("x", d =&gt; xSkala(d.x0) + barPadding)
+    .attr("y", d =&gt; ySkala(yAccessor(d)))
+    .attr("width", d =&gt; d3.max([0,xSkala(d.x1) - xSkala(d.x0) - barPadding]))
+    .attr("height", d =&gt; dimenzije.grVisina - ySkala(yAccessor(d)))
+
+console.log(stupciGrafa)</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="2a4216b13df331be80738c22ace2fc25"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="1d8c1b6f2b0df122206617203bcaac1f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="4c8e56179feb3a8848977b2613eb4bbc">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="aa03c9371075f519268a09fbe73afab5">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 140.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="ecaab45c260831242e361e3f4d743f9e">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Dodajemo <em>transtion() </em>metodu i ponovno gledamo rezultat
+	<ul>
+		<li>rezultat je sličan ali vidimo da se radi o transition objektu</li>
+		<li>u <em>Prototype </em>svojstvu možemo vidjeti ugrađene metode</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="749c13396e1a69d5b1b1ad7a8490d2c0">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 821.639px; height: auto; left: 80px; top: 243px;" data-name="code-18770d" data-block-id="83292a330dcd3e84ce7c6e2aed1c3812">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="2" style="padding: 15px;">const stupciGrafa = sveKosare.select("rect")
+  .transition()
+    .attr("x", d =&gt; xSkala(d.x0) + barPadding)
+    .attr("y", d =&gt; ySkala(yAccessor(d)))
+    .attr("width", d =&gt; d3.max([0,xSkala(d.x1) - xSkala(d.x0) - barPadding]))
+    .attr("height", d =&gt; dimenzije.grVisina - ySkala(yAccessor(d)))
+
+console.log(stupciGrafa)</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 806.4px; height: 157.445px; left: 87.6195px; top: 508.763px; min-width: 1px; min-height: 1px;" data-name="image-0c00b2" data-block-id="6debd6501e7a2198693f8683d89e77ba"><div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="799" data-natural-height="156" data-lazy-loaded="" data-src="vp_v04-54966e/9fe20011b86ce61e4f35affb55c660ee.png"></div></div></div></section><section data-id="947cc0a215c8c0e117fc4ed2917e06d1"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="3b4b727b1fd5ff5a2a1531512319d100">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="b66558e970d9cfa146c3c40df5a2d62e">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="218c0b9702b4442c57c9d0749ea40087">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 265.999px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="688eed8f5d45917f2272febf87b5a487">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Neke od metoda su iste kao i u <em>selection</em> objektu, ali imamo nekoliko novih metoda koje služe za animaciju</li>
+	<li>Dodatna prednost je da se svi atributi koji su navedeni nakon <em>transition</em> metode automatski animiraju
+	<ul>
+		<li>pokušajte promijeniti metriku</li>
+	</ul>
+	</li>
+	<li>Početna animacija je prihvatljiva
+	<ul>
+		<li>malo je prebrza (0.25s - to ćemo kasnije promijeniti)</li>
+		<li>drugi problem je što ponekad možemo vidjeti kako se stupci pojavljuju u gornjem lijevom kutu i "ulijeću" u svoju poziciju</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="1a54a8e6d3e9349ffbf78cfd1310d6ed">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="6a26f074aec10e3a2abf30fed6469016"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="fab8e86fae86904b64d4a4c07670a44d">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="a8fbd9e31bff8b52a5a964d0b34f3428">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="7395f11b9501469c4cc1a9a36b891829">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 242.999px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="8d402101b11e90cf19f22fbfa68dbb7b">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Razlog je što prilikom dodavanje novih elemenata ne definiramo početne dimenzije (stvaraju se na 0,0)</li>
+	<li>Promijeniti ćemo taj dio
+	<ul>
+		<li>početna visina će biti 0 kako bi vidjeli promjenu</li>
+		<li>početna <em>y</em> pozicija će biti dno grafa</li>
+		<li>postaviti ćemo drugu boju kako bi vidjeli razliku
+		<ul>
+			<li>CSS ima prednost nad <em>fill</em> atributom pa zato koristimo <em>style</em> metodu, a ne <em>attr("fill", boja)</em>
+</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="553e03c88d8dd952b3f98b31c0743a94">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 821.639px; height: auto; left: 80px; top: 472px;" data-name="code-18770d" data-block-id="c3f860940e9272703f18e8afcc89a66f">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">noveKosare.append("rect")
+    .attr("x", d =&gt; xSkala(d.x0) + barPadding)
+    .attr("y", dimenzije.grVisina)
+    .attr("width", d =&gt; d3.max([0,xSkala(d.x1) - xSkala(d.x0) - barPadding]))
+    .attr("height", 0)
+    .style("fill", "yellowgreen")</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="1134ac13662172883704a1721d4d319a"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="2f95eb75b6c1171d45d2c8af1e22c260">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="47a75ad9031e237a2f271a1b9ef3b79a">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="552743f4e0d93036879a7b737f5942f3">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 226.999px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="f77b87216957530384b15d9e76b2985b">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Jednom kada dodamo nove košare promijeniti ćemo im boju natrag u plavo</li>
+	<li>Ulančavanje animacija u d3 je jednostavno
+	<ul>
+		<li>dovoljno je dodati novi poziv <em>transition </em>metode i nakon njega dodati svojstva vezana uz novu animaciju</li>
+	</ul>
+	</li>
+	<li>Također ćemo i usporiti početnu animaciju dodavanja stupaca
+	<ul>
+		<li>koristimo <em>duration()</em> metodu</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="41c1d039b8476877d39119b70a9a7049">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 821.639px; height: auto; left: 96.361px; top: 420px;" data-name="code-18770d" data-block-id="bde342a44325bfcc02d1068997529519">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="7-8,2" style="padding: 15px;">const stupciGrafa = sveKosare.select("rect")
+  .transition().duration(600)
+    .attr("x", d =&gt; xSkala(d.x0) + barPadding)
+    .attr("y", d =&gt; ySkala(yAccessor(d)))
+    .attr("width", d =&gt; d3.max([0,xSkala(d.x1) - xSkala(d.x0) - barPadding]))
+    .attr("height", d =&gt; dimenzije.grVisina - ySkala(yAccessor(d)))
+  .transition()
+    .style("fill", "cornflowerblue")</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="27c8a758d0bc1c80f36d7e5612bc7724"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="153b6df6580bc52e1bf326c55fcdbabf">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="fc0cad1e77131a932418d687054b4987">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="ec630db8420acdd8b7c9227e92d1029a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 93.4994px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="487f3b8013bbe4c8d7278b793a32f15a">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Gotovo identično ćemo animirati i oznake</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="e664273cb75c890318acc2d7e7bd2885">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 821.639px; height: auto; left: 69.1805px; top: 471.5px;" data-name="code-18770d" data-block-id="374734321da515dd83cee761f711dd4e">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">noveKosare.append("text")
+    .attr("x", d =&gt; xSkala(d.x0) + (xSkala(d.x1) - xSkala(d.x0)) / 2)
+    .attr("y", dimenzije.grVisina)</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 821.639px; height: auto; left: 69.1805px; top: 140px;" data-block-id="3956f2b70fb73e717d798a2a171135f6" data-name="code-0437d7">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="7-8,2" style="padding: 15px;">const stupacTekst = sveKosare.select("text")
+  .transition().duration(600)
+    .attr("x", d =&gt; xSkala(d.x0) + (xSkala(d.x1) - xSkala(d.x0)) / 2)
+    .attr("y", d =&gt; ySkala(yAccessor(d)) - 5)
+    .text(d =&gt; yAccessor(d) || "")</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="eae8d88e4d7d6378c83501ce13cc120c" data-name="group-d8e1f6">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 384px; z-index: 17;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 334.5px; height: auto;" data-origin-id="487f3b8013bbe4c8d7278b793a32f15a" data-block-id="553e56e59e0e522e025636647361b510" data-name="text-3bbac6">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Naravno, ne zaboravite postaviti početne pozicije, kako nove oznake ne bi dolazile iz kuta ekrana</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div></section><section data-id="c6c21dca07af093da9687336cb4eb068"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="4f55aef0f863e267da4ab25493b562e1">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="ce1931f2d57238f15e5a417d056e3263">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="4dbfbd63978fd360d6b90c42adc20020">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 132.999px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="b321aa4af1ea316296fb11307466feef">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>d3 također podržava različite animacije u <a href="https://github.com/d3/d3-ease" target="_blank">d3-ease</a> modulu</li>
+	<li>Kako ne bi pojedinačno dodavali animacije na svaku transformaciju radimo objekt tranzicije na globalnoj razini</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="6dd215fd579a6730531a94158df2f99a">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 440.308px; height: auto; left: 259.846px; top: 211.999px;" data-name="code-0437d7" data-block-id="c0156dda256ce0488aed45ccee04e4ca">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="3-7" style="padding: 15px;">const barPadding = 1
+
+const novaTranzicija = d3.transition()
+    .duration(600)
+    .ease(d3.easeBackIn)
+       
+console.log(novaTranzicija)</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="ca73323ca9c8f0e9dd6204a4527a17d9" data-name="group-e767f1">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 454px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 424.5px; height: auto;" data-origin-id="b321aa4af1ea316296fb11307466feef" data-block-id="b381e5912b27ce5d2bc3f5569a641fec" data-name="text-1eb559">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Možemo ga sada slati kao parametar...</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 446.884px; height: auto; left: 16.558px; top: 502px;" data-block-id="41bf448684bc630fac617faebe9fd19a" data-name="code-157e94">
+    <div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 18; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 15px; line-height: 18px;" class="javascript"><code data-line-numbers="2" style="padding: 15px;">const stupciGrafa = sveKosare.select("rect")
+  .transition(novaTranzicija)
+    .attr("x",	// ..</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 451.902px; height: auto; left: 494.049px; top: 502px;" data-block-id="2bc028726bad123151fee6b828c6012d" data-name="code-d0cf8a">
+    <div class="sl-block-style" style="z-index: 19; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 19; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 15px; line-height: 18px;" class="javascript"><code data-line-numbers="2" style="padding: 15px;">const stupacTekst = sveKosare.select("text")
+  .transition(novaTranzicija)
+    .attr("x", /* ...</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 752.532px; left: 103.734px; top: 645.948px;" data-name="text-57d787" data-block-id="33f6ba1bc1d4e426800dce618fa5f1af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 60%; color: rgb(0, 179, 11);">
+<p>*Pogreške u konzoli su uzrokovanje animacijom koja privremeno postavlja visinu na negativnu vrijednost (što nije dozvoljeno za <em>rect</em> element)</p>
+</div></div></section><section data-id="1426fbbbb1a00427ceba24cfd3c50ada"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="89919e1d8e2b2eedf699766842cbbcab">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="38205cec732174f4ae6f732b7254e435">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="66cf0ca419192c07d85e24a07c1cfa77">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 120.999px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="28492979b1d1e23da3b9fa464cba303d">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Sada ovu tranziciju možemo koristiti kada god želimo
+	<ul>
+		<li>to ćemo i napraviti za crtu prosjeka</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="92154cd1df64b14b38943b6f86e3e0af">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 566.154px; height: auto; left: 196.923px; top: 177.999px;" data-name="code-0437d7" data-block-id="6d0b9ae2c020ffbdec766be16a1f0e98">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const srednjaPravac = granice.selectAll(".prosjek")
+  .transition(novaTranzicija)
+    .attr("x1", xSkala(srVr))
+    // ...</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-name="group-e767f1" data-block-id="01dd8464cc19ade00651b30c72625993">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 368px; z-index: 17;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 338.5px; height: auto;" data-name="text-1eb559" data-block-id="57ccbe563b342314763fa3da769426b0">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>... a možemo i prilikom generiranja osi</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 451.902px; height: auto; left: 254.049px; top: 420px;" data-name="code-d0cf8a" data-block-id="491a24d29e9b0c9da8786f18811f5f50">
+    <div class="sl-block-style" style="z-index: 21; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 21; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 15px; line-height: 18px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const xOs = granice.select(".x-os")
+  .transition(novaTranzicija)
+  .call(xOsGenerator)</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="d38160a7bc044d7e4c4c2d59b1b37b71"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="ecd2da69b46fd7c94f93a03b24f2200f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="c044763a944b2f30d1eb549484eefcac">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="e90849970e1ea2c1bfdbf23a7468d5aa">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 140.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="6b82c06617fdf6fdd722788e2c53e07f">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>d3 nam omogućava jednostavnu animaciju i elementa koji nestaju sa ekrana
+	<ul>
+		<li>napraviti ćemo novu tranziciju (i modificirati staru)</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="904f090fce7b88a5797286f29c870096">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 566.154px; height: auto; left: 196.923px; top: 221.999px;" data-name="code-0437d7" data-block-id="a139f1b8609db88a20f2960bb4b7d7e2">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const izlazTranzicija = d3.transition.duration(600)
+const novaTranzicija = d3.transition().duration(600)</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="7328ee59fbec993983bbab25d4235290" data-name="group-724d66">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 371px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 341.5px; height: auto;" data-origin-id="6b82c06617fdf6fdd722788e2c53e07f" data-block-id="0adc6f938e0e04ddcfda6692a91b8403" data-name="text-c2c978">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>"Stare" stupce ćemo obojati u crveno i zatim animirati</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 449.748px; height: auto; left: 255.126px; top: 420px;" data-block-id="c2d6932333047650aaefad8593c9af68" data-name="code-d6eced">
+    <div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 18; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const stareKosare = sveKosare.exit()
+
+stareKosare.selectAll("rect")
+    .style("fill", "red")
+  .transition(izlazTranzicija)
+    .attr("y", dimenzije.grVisina)
+    .attr("height", 0)
+
+stareKosare.selectAll("text")
+  .transition(izlazTranzicija)
+    .attr("y", dimenzije.grVisina)</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="665e589c2db9b556c18b46d663c97b6e"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="256db31a041200e786bb974c2905e8fb">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>d3.transition()</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="e2f3e6ef269e7459a6afb242d158d79d">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="054e9d13a5e07a2eea490f6991ff996a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 113.499px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 63.9994px; height: auto;" data-name="text-c5947b" data-block-id="2fd9bad1f037048b80e8c38c169e4bb3">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Naravno, moramo animirati i funkciju za uklanjanje kako bi odgodili uklanjanje dok se ne završe prethodne tranzicije</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="1f40c77ab524338d46faf0fa002512b3">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v04-54966e/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 337.356px; height: auto; left: 311.322px; top: 180.5px;" data-name="code-0437d7" data-block-id="561c07ef71f691d938e3ef6691c13b8d">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">stareKosare
+.transition(izlazTranzicija)
+  .remove() </code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-name="group-724d66" data-block-id="77b5299d6254f3694b335db8cddc7132">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 446.5px; z-index: 17;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 330.5px; height: auto;" data-name="text-c2c978" data-block-id="7956e79b387a78bc5bd76c6757910038">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Jedini preostali problem je što dolazi do preklapanja "novih" i "starih" elemenata - istovremeno se animiraju</li>
+	<li>To ćemo postići jednostavnom promjenom ulazne tranzicije
+	<ul>
+		<li>više neće biti "root" tranzicija, već ćemo je povezati na izlaznu tranziciju</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 715.748px; height: auto; left: 122.126px; top: 573.536px;" data-name="code-d6eced" data-block-id="ad9335962c2b567e3004cf4ee25c9d98">
+    <div class="sl-block-style" style="z-index: 20; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 20; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const novaTranzicija = izlazTranzicija.transition().duration(600)</code></pre>
+        </div>
+    </div>
+</div></section><section data-id="c7596487d9f244da905e05cf0e76e427" data-background-image="vp_v04-54966e/80c6082b95f0da4c38268e45bbdd263e" data-background-opacity="0.3"><div class="sl-block" data-block-type="text" style="width: 876px; left: 41px; top: 178px; height: auto;" data-block-id="1eebee16a1c64bc0c535c07ba97ff585" data-name="text-55fdd4"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11; padding: 20px; line-height: 1.04;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<h1>Hvala na pažnji!</h1>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-a5c0c7" style="width: auto; height: auto; left: 160px; top: 267.797px;" data-block-id="33f92e275b29906facb4817fd7b77441"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="640" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 10;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="640" height="1" viewbox="0 0 640 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="640" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0" x2="640" y2="0"></line></svg></div></div></section></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2491464,"slug":"vp_v04-54966e","title":"vp_v04","description":"Vizualizacija Podataka - Uvodno predavanje","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":"2020-11-27T13:47:48.491Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/c276aa03952162880bf0a8e236146044/thumb.jpg?1667165087","view_count":0,"user":{"id":1363939,"username":"gzaharija","name":"Goran Zaharija","description":"","thumbnail_url":"https://lh5.googleusercontent.com/-AqW8L_hCWdY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnGN5x7VggKeiiZ5zU8LIlPw4Thlw/photo.jpg","account_type":"lite","team_id":null,"settings":{"id":5710954,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"merriweather","theme_color":"silver-green","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":29,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1668502381840,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"linear","upsizing_enabled":true,"notes":{"c34425e6a5d1763ca6a71781677f0112":"","f983f7445a8cbe89dfd9ae67e07fb21b":"","f1b24faa29e4587c93d6d2bdaa0d05d4":"","07b517c898b6a58d741901cece914588":"","be23eb75799fa0a6e5e4176a45483c01":"","bf6bee7726f7d711efab81cbbffd34e2":"","e25a2f509cd40677e833243b38d58469":"","e5ad1468f389fe2c84f40c7ec7ca63e2":"","f95fe71cd18a6965d107e31ff71b2638":"","615c4969a96995de7ade317fd1221fc1":"","2e6e78c71055336613c1274d5aafc65c":"","c7596487d9f244da905e05cf0e76e427":"","b32032a43f89a8e5fa404cac7b0ccbbf":"","29aece7d460f48342c3c7ba7942621d7":"","20410d9d803df2c53a4ca11c1937d6c8":"","99e5fb231a5aae4f5de5790432e6afeb":"","d5a6c55a2713f7f1fa7822027f386897":"","10ab16e65becac18cc3a5fd537bbfdad":"","412436b66d3afcc2429be09735864390":"","63d7d86d225142dad5f977b409958b83":"","23df7cac2af231396165e1eb2909c234":"","f70e1cdb5245338466e3d447e0ecaf4a":"","5cf4e38e4e941967733a710a7c551ddf":"","ee16d03c297f70094ba20abc32644711":"","ba4cbd8129e1deb68a618a82fdf9c5bf":"","26e7bab17b072441b5d936f3be1bd8a9":"","950932f3570696738675c24c00b402c2":"","627ed4b02167a07f461ab60507c2de48":"","4c351c69e0ada7f4e182a53607ac5674":"","d2140a1717e06501df444c00c78c3baf":"","be47d02ad2a04c635ce15af0ebf31cc8":"","84d836ffc26a1ef474c2a0847afa82e6":"","9b97fa75715e2b12241dee3bcd0dcbb6":"","83742d4a782959479ba50439cf915423":"","24f026484510a6abf241f96e50b4a625":"","6802cd0888e714aa35ae895f94b800ae":"","1f768d151e431efdbe81758f042817da":"","ba1d75634158fc66f766e4bb2ef11a5f":"","992b741a847bc1cd7c4eecdcaa5b2a21":"","9021d20e429a7ecac4abc96da35e8405":"","9719df76d79497407a64e29cd692504f":"","b7663ac32b0699bd435c6b1c72cdb2ff":"","74d356e0e868a1becfded57aac8680a2":"","b7a63f5dd6931f8f5551d4340acba840":"","05a932cf8d7986651b57958d09ad6f41":"","3c7619f0a5ea7fb6b2c009c1862f9661":"","8e5fb8fd4601fa5b83cb10f591dedba0":"","22fa703bfbc923ecf0e9056794ebbb57":"","81c3383711d58ac45d4da45ef32ce1d4":"","f7b7e445c5b2331ba464c386c4a7e9d3":"","85c9815894db732fb205449ba917baa3":"","2daf1e698ee02c601f4752af6ceaa451":"","01e1325280e7b74d69daf2fee103ad65":"","6ea6e1f41e977f7ec3989afcec133c5f":"","a3c22906aa05b87810f3c8321a9e5aa9":"","5619a9de90fa2e64cf1812ec93767653":"","5de9280aa403e563645152cd39d1403d":"","22764dc6b061d9144fe7aac1ae11e312":"","de8e50e6e9517d0dbdb7419d5d7b609c":"","68711d5fbf2fd87f72b7cf66db727207":"","04231cb21096261122ce950f20b40953":"","6c1c55bf5ef65293b6a10aa33403155f":"","770d7cb94201746a24bf5c3e19a50c91":"","9c4714327a3327b4f87f8e1b84172085":"","550df6dd0f690295ad6b6a2710b3b77a":"","b6d4db24bc60bb521b005fd1369205ae":"","9cba137b9044a859eda8a9b56a86de17":"","162bbb7e40fb322c30d7d447873bba78":"","b97db3d74a66aad30981e68efdbd5654":"","7ff310999b762dc52a87263fc6982f86":"","96616c630747b7240d378be57571ec62":"","f30d523472d205ba305b656c8185f0e3":"","8780393a389b009a00c8cfa2bde66b59":"","e23af754c4eb54900805edf68d4765fc":"","f566cd51bb0e5a95d064d32db5bf1b18":"","59d4bf2a9794250e98452e14e2122745":"","1c8c187d55d09b2649716ebcf126c16d":"","b7400bd43bca0e0df39b344592f54be1":"","26f0e925681fd0303946b28c0a4fad41":"","8c853eaa7f06286d61e8cf9ecb6e8f37":"","2e0a45e0fab293c84ba51272dab50c64":"","b33b117185920f04047eb897fb8ac2c0":"","48188ed017deceec5b70f81b2f3cdceb":"","204fed03fa540061c41135ab89d76573":"","79b85ca1a3378691d4da8a562c259190":"","3ee3c5d4ee8c2cee65a5a7fa732a74be":"","ea99055c7943ed427885fbace459d85c":"","79d7c85cba9a0ba8e2eb0279cf1ff708":"","8f9a1787b61e89af6a62a00eae267bf8":"","d5860e561d35308ba02cc0ac504b15f5":"","aeef90d184566838e4b21be5f737695c":"","4c860b745da6d065f6306f8a68827e8a":"","2880c586ce7d49bde2ec13328741e87e":"","a776e5ab6118bc816071e7fe82940a08":"","86e8c0fcaba8656d37055d19db07d9a2":"","3f08ab38a48ce6c27ad325098b95feda":"","c69727b579ed45047df1611efda70649":"","aa91e1a80d100bc0a68dcd5917694b2d":"","78894f0669f2d770a42323155d6e4d98":"","d3c81171d052c8369d7859e05c892356":"","440ca4bed4cdaad0515098d543bbfba9":"","c5c72cd95fb434104dd7ca29d25bdc36":"","2a4216b13df331be80738c22ace2fc25":"","e3ae97638486de37e208cf7aba37dc65":"","947cc0a215c8c0e117fc4ed2917e06d1":"","6a26f074aec10e3a2abf30fed6469016":"","1134ac13662172883704a1721d4d319a":"","27c8a758d0bc1c80f36d7e5612bc7724":"","c6c21dca07af093da9687336cb4eb068":"","1426fbbbb1a00427ceba24cfd3c50ada":"","d38160a7bc044d7e4c4c2d59b1b37b71":"","665e589c2db9b556c18b46d663c97b6e":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = '../lib/fonts/';
+		</script>
+
+		<script src="../lib/reveal.js"></script>
+		<script src="../lib/reveal-plugins.js"></script>
+		<script src="../lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "linear",
+
+				transition: "slide",
+				backgroundTransition: "fade",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>

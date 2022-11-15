@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>vp_p04</title>
+
+		<meta name="description" content="Vizualizacija Podataka - Uvodno predavanje">
+
+		<link rel="stylesheet" type="text/css" href="../lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-merriweather theme-color-silver-green">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="5b8a4a036e8598747befd838862d256d"><section data-id="f983f7445a8cbe89dfd9ae67e07fb21b" data-background-opacity="0.25" data-background-image="vp_p04/a83adfb3e588cd9d9e18ec53aefc8415"><div class="sl-block" data-block-type="text" style="width: 876px; left: 41px; top: 178px; height: auto;" data-block-id="c6f3506a951073356126072c64b73ba7"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 12; padding: 20px; line-height: 1.04;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<h1>Vizualizacija podataka</h1>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-a5c0c7" style="width: auto; height: auto; left: 323px; top: 326px;" data-block-id="1ae6f23f85340701e19030440fd20e20"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="314" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="314" height="1" viewbox="0 0 314 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="314" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0" x2="314" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 877px; left: 41.5px; top: 326px; height: auto;" data-name="text-d18e72" data-block-id="689a62ac335c3e0957668b823ebb6c68"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 14; text-align: center; color: rgb(0, 0, 0); font-size: 120%; padding: 20px;" data-placeholder-text="Text">
+<p>Predavanje 04</p>
+</div></div></section><section data-id="f1b24faa29e4587c93d6d2bdaa0d05d4"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="8af19301c437a0c2cd5ac1932b93911d">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Oznake i kanali</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="4a50f3a040a3fdf8f9482654901bb1a9">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="7d7b6bbeada2f231ebedb9eb87772feb">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 466.526px 276.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 933.053px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="1f931699ed1eb5fd2d5669bc20a62cf5">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Upoznati ćemo se sa osnovnim konceptima oznake (<span style="color:#00b30b"><em>mark</em></span>) i kanala (<span style="color:#00b30b"><em>channel</em></span>) koji čine osnovu vizualnog enkodiranja</li>
+                    <li>Temelj osmišljavanja vizualnog prikaza (tj. enkodiranja podataka) čini kombinacija dva aspekta - grafički elementi (oznake) i vizualni kanali koji upravljaju njihovim izgledom</li>
+                    <li>Čak se i prilično složeni vizualni prikazi mogu "razbiti" u jednostavnije komponente koje onda možemo analizirati u kontekstu njihovih oznaka i strukture kanala</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="a08fd51eaecc5238c693b706edc4e072">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="17ec654c7abdf8c482b1b28805a7f29f"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="5841a81d5ab4dbf1f05ff6e882470022">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Definicije</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="1005a344752a9dc1d4dbe9da13c96daf">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="a0848fc689408e8b991f9bc5914b05d5">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 291.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="2096bec00a72ad84e53fdb3a7f6501f7">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>
+<span style="color:#00b30b"><strong>Oznaka </strong></span>(<em>mark</em>) je osnovni grafički element u slici
+                        <ul>
+                            <li>to su primitivni geometrijski oblici koje klasificiramo prema njihovoj prostornoj dimenziji</li>
+                        </ul>
+                    </li>
+                    <li>Najčešće oznake imaju:
+                        <ul>
+                            <li>0 dimenzija (0D) - točka</li>
+                            <li>1 dimenziju (1D) - pravci i krivulje</li>
+                            <li>2 dimenzije (2D) - površina</li>
+                        </ul>
+                    </li>
+                    <li>Moguće su i 3D oznake (volumen) ali se rjeđe koriste</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="ea4573372eb240e55262d0ea65dec8b9">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 806.4px; height: 116.649px; left: 80px; top: 501.675px; min-width: 1px; min-height: 1px;" data-name="image-7ef204" data-block-id="76aed6131e21868e0151090c94fbdfb7">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="636" data-natural-height="92" data-lazy-loaded="" data-src="vp_p04/7c748dd6b24ff0fc14e5c59b62c2e536.png"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 146.417px; left: 139.135px; top: 618.324px;" data-name="text-6f2dde" data-block-id="c50ebbf836928b8aa812fa3aacb0dad7">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(0, 179, 11); font-size: 90%;">
+        <p>Točke</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 146.417px; left: 413.583px; top: 618.324px;" data-block-id="48a87090d9a0c11e0619f7c480ead845" data-name="text-4517cb">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(0, 179, 11); font-size: 90%;">
+        <p>Linije</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 146.417px; left: 692.557px; top: 618.324px;" data-block-id="295ddfb39c42fd02ebfb94606f8a6482" data-name="text-6717e4">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(0, 179, 11); font-size: 90%;">
+        <p>Površine</p>
+    </div>
+</div></section><section data-id="58e9eee26edb6e057cc19bab39d16c90"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="7d443f9915e95589421c23045fb8afc2">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Definicije</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="296a21cbcdf2751acd18a13f201ab54e">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="4912e5fd04fbdc95b9fdcc43403a60b1">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 363px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="506ba59d32ecbbb1bfeea54ed545833f">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Vizualni<strong> </strong><span style="color:#00b30b"><strong>kanal </strong></span>(<em>channel</em>) je način upravljanja izgledom oznaka neovisno o dimenzionalnosti geometrijskih primitiva</li>
+                    <li>Postoji mnoštvo kanala koji mogu predstaviti (enkodirati) informaciju kao neko svojstvo oznake
+                        <ul>
+                            <li>neki kanali se odnose na prostornu poziciju - horizontalna, vertikalna, dubina...</li>
+                            <li>imamo i kanale boje - nijansa (<em>hue</em>), saturacija (<em>saturation</em>), svjetlina (<em>luminance</em>)</li>
+                            <li>kanali za veličinu ovise o broju dimenzija - dužina, površina, volumen</li>
+                            <li>imamo i kanale temeljene na pomaku - smjer kretanja i brzina</li>
+                            <li>nagib i zakrivljenost su također kanali</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="868dbf311f37c47a337113ea4f3f08f4">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="e56329c5ea0a4bef7a5f28662518fd5d"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="42a73b155d207aaad6e083cc44672575">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2>
+<strong>Oznake</strong><strong> i kanali</strong>
+</h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="2bc5dbc5567e71f41ceb8fa03a9cd24f">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="973c415a695a3f3cbb68601a37f45a86">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 289.451px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 94.951px; height: auto;" data-name="text-c5947b" data-block-id="337d6adecb33b420d3da32227eb8a7e3">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Na slici vidimo primjer povećanja broja prikaza kvantitativnih podataka dodavanjem novog vizualnog kanala
+	<ul>
+		<li>u prvom grafu imamo samo jedan kvantitativni podatak (visinu stupaca) - drugi podatak je kategorički</li>
+		<li>drugi primjer je graf raspršenosti kod kojeg imamo dva kvantitativna podatka (<em>x</em> i <em>y</em> os) - to je inače granica 2D prikaza</li>
+		<li>mnogi vizualni kanali nisu prostorni pa dodavanjem boje (nijanse) možemo dodati i treći kvantitativni atribut</li>
+		<li>četvrti atribut prikazujemo kanalom veličine</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="ba5bcc86a9abce7b75b2666c3d61288b">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 806.4px; height: 162.923px; left: 76.8px; top: 505.365px; min-width: 1px; min-height: 1px;" data-name="image-ec8579" data-block-id="59ec4bb368b1a79f11a76f9b60929ed6"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="589" data-natural-height="119" data-lazy-loaded="" data-src="vp_p04/394555d9baba55ed0de936b791ac0b06.png"></div></div></div></section><section data-id="9ac751fbfc62ae1fe9e9b355ad66a4aa"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="47e110f73149f6806a83390d1d92cf3d">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2>
+<strong>Oznake</strong><strong> i kanali</strong>
+</h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="dab337e0350e04ff545740fc5871cd4e">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="b89b74db0f20a91d9ccf12b3a30fc2ed">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 257.951px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 94.951px; height: auto;" data-name="text-c5947b" data-block-id="39ccd92391c2b81c3adef171515049e0">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>U prethodnom primjeru svaki kanal predstavlja jedan atribut
+	<ul>
+		<li>kanali se mogu kombinirati za predstavljanje istog atributa</li>
+		<li>time dobivamo redundanciju koja omogućava bolje prenošenje informacije sa cijenom gubitka kanala</li>
+	</ul>
+	</li>
+	<li>Kanali veličine i oblika se ne mogu koristiti kod svih vrsta oznaka
+	<ul>
+		<li>višedimenzionalne oznake uglavnom imaju ograničenja koja proizlaze iz načina na koji su definirane</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="7e67f08b742cdb1d892ff93882f1711a">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+</section><section data-id="f61e0425cdd91580ecd4c034ac494d92"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="1e8c7f94762bd21412c755956b476b09">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Vrste kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="61677bfdc85f7d5ed6423f2fead1b2ab">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="2830bc4153cd8785e0d83139f7ce70b2">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 300.951px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 94.951px; height: auto;" data-name="text-c5947b" data-block-id="b577499840fa61e7656447535693a23f">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Ljudska percepcija ima dva različita senzorska modaliteta i prema tome kanale možemo podijeliti na kanale:
+	<ul>
+		<li>
+<strong><span style="color:#00b30b">identiteta </span></strong>(<em>identity</em>) - pružaju nam informaciju <span style="color:#00b30b"><em>što</em> </span>ili <span style="color:#00b30b"><em>gdje</em> </span>je nešto
+		<ul>
+			<li>koji oblik vidimo? - krug, trokut, križić...</li>
+			<li>koja je boja ili nijansa</li>
+		</ul>
+		</li>
+		<li>
+<strong><span style="color:#00b30b">veličine </span></strong>(<em>magnitude</em>) - govori nam <span style="color:#00b30b"><em>koliko</em> </span>nečega ima
+		<ul>
+			<li>koliko je jedan pravac duži od drugoga</li>
+			<li>koliko je jedna boja tamnija od druge</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="a1e394fbeca10daa77d4357768c8a335">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="efd67288f6e33ede9a37ca45777ead3b"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="87bab2c5011a13c0d573abdcefd1e0f6">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Vrste oznaka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="b7e18239cabb398ff02c1de83c1e23ed">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="164252c2e0ab9e856cf24c1487ae6dec">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 328.951px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 94.951px; height: auto;" data-name="text-c5947b" data-block-id="4edfbd2e7e15bc207ceec8161571fa93">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Do sada smo oznake predstavljali u kontekstu skupova podataka u obliku tablica - gdje oznaka uvijek predstavlja jedan element</li>
+                    <li>Postoje i oznake u mrežnim skupovima podataka (<em>network dataset</em>)
+                        <ul>
+                            <li>i tu imamo predstavljanje jednog elementa (čvora) sa oznakom</li>
+                            <li>za vezu (<em>link</em>) možemo koristiti oznaku povezivanja (<span style="color:#00b30b"><em>connection</em></span>) koja prikazuje vezu između dva elementa</li>
+                            <li>također imamo i oznaku sadržavanja (<span style="color:#00b30b"><em>containment</em></span>) koja koristi oznaku površine kako bi grupirala elemente ili prikazala hijerarhijsku vezu</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="eab2bd4bd4a46100779589245b64dbd1">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 312.476px; height: 91.8009px; left: 599.625px; top: 579.761px; min-width: 1px; min-height: 1px;" data-name="image-ac8495" data-block-id="afb9090baad9fce6f420e450eeac9f6d">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="354" data-natural-height="104" data-lazy-loaded="" data-src="vp_p04/55f091c7167bbe53b89cc5ad62e77c3b.png"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 456.836px; height: 91.8009px; left: 54.9125px; top: 579.761px; min-width: 1px; min-height: 1px;" data-name="image-63698f" data-block-id="b032874d9a24da7cd629810440bc03c0">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="632" data-natural-height="127" data-lazy-loaded="" data-src="vp_p04/f5d4bbf60c3a1235a812e17be49151a2.png"></div>
+    </div>
+</div></section><section data-id="c16d093a81d6b2fcb98c254bf0895ae6"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="9c09ca5bf96048f106af3961d6a33a12">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Korištenje oznaka i kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="6b8d8583a2e0407a5bbcb22a3438decc">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="1f4ce5449ddf9234c599fa88b08ba8b9">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 381px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 100px; height: auto;" data-name="text-c5947b" data-block-id="b09e9dc456253177812bff65c41dfe08">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Nisu svi kanali jednaki
+                        <ul>
+                            <li>isti atribut enkodiran sa različitim kanalima ne mora biti jednako percipiran od strane krajnjeg korisnika</li>
+                        </ul>
+                    </li>
+                    <li>Dva načela korištenja:</li>
+                    <li>Načelo <span style="color:#00b30b"><strong>izražajnosti </strong></span>(<span style="color:#00b30b"><em>expressiveness</em></span>)
+                        <ul>
+                            <li>vizualno enkodiranje bi trebalo prikazati sve (i samo te) informacije o atributima skupa podataka</li>
+                            <li>uređeni podaci bi trebali biti prikazani tako da se automatski shvati njihov poredak</li>
+                            <li>neuređeni podaci ne bi smjeli biti prikazani na način koji implicira bilo kakav redoslijed</li>
+                            <li>kanali identiteta su prikladni za neuređene, a kanali veličine za uređene atributa</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="0afb53c8423991cd25e905bdfdd70e44">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="dbbbc10cdeeeed71ab470b97b3ba5a56"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="d31971679bf0420bed469417679749f2">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Korištenje oznaka i kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="3d5f1e6437b9093638f9074f245fb279">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="28e894e9f18138f3521657cf05b4e2fb">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 235.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 100px; height: auto;" data-name="text-c5947b" data-block-id="54d26ad1bf6aa4eb82ba2977ab755a3b">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Načelo <span style="color:#00b30b"><strong>djelotvornosti </strong></span>(<span style="color:#00b30b"><em>effectiveness</em></span>)
+	<ul>
+		<li>važnost atributa bi se trebala održavati na istaknutost (uočljivost) odabranog kanala</li>
+		<li>najvažniji atributi bi trebali biti enkodirani sa kanalom koji je najučinkovitiji i koji će biti najviše primijećen  </li>
+	</ul>
+	</li>
+	<li>Kako odrediti djelotvornost kanala?</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="f858fba67e59840d91af93bf75665ecf">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="efa4975c92d34574586f3ba90a5c41b3"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="7ed0238ef295a9ad5d74195ad40f32ca">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="8058064a97590284fe35e934458cb417">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="1cf27ca6789888b4a6974cb2673fce9a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 122.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="307000e72a386e2f6d0c02cc01220c26">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>
+<span style="color:#00b30b">Uređeni </span>atributi bi se trebali prikazivati <span style="color:#00b30b">kanalima veličina</span>
+</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="4f67d5418586ab8935d9a7b1aaf9c2ab">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 226.654px; height: 532.733px; left: 659.615px; top: 167.267px; min-width: 1px; min-height: 1px;" data-name="image-f49e49" data-block-id="3ed5e4deca8f5eff6f28fba59d6ed67e">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="234" data-natural-height="550" data-lazy-loaded="" data-src="vp_p04/246dc3bb2e00efe30a760bc7639185c1.png"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 407.327px; left: 34.049px; top: 171px;" data-name="text-44c94f" data-block-id="6d11b5ee6e45ebc8eb31ebe9d04f1583">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: right;">
+        <p>usklađena prostorna pozicija</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 434.492px; left: 6.884px; top: 224.622px;" data-block-id="056701f451fbadd7142376f77adb9c0a" data-name="text-27e001">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: right;">
+        <p>neusklađenaprostorna pozicija</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 307.981px; left: 133.395px; top: 272.79px;" data-block-id="bc248651de547f5801401766325f3fd3" data-name="text-cc9687">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: right;">
+        <p>duljina</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 379.229px; left: 62.147px; top: 330.5px;" data-block-id="83d13e4c45d626626772291b2db7b672" data-name="text-1141c8">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; text-align: right;">
+        <p>kut/nagib</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 322.03px; left: 119.346px; top: 381px;" data-block-id="b4e345fab1a38da0cf0aaee9fc316cbf" data-name="text-74ce02">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; text-align: right;">
+        <p>površina</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 369.195px; left: 72.181px; top: 433.633px;" data-block-id="1f1f62f819fc536e610b59d09f7b9924" data-name="text-906ae8">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; text-align: right;">
+        <p>dubina (u 3D prostoru)</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 390.269px; left: 50.595px; top: 511.906px;" data-block-id="5c5da5ff7aa7034c819273e12be0146a" data-name="text-f7f240">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; text-align: right;">
+        <p>saturacija i svjetlina</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 417.853px; left: 23.011px; top: 615.197px;" data-block-id="96d91c582857e0591e48c39462c162bd" data-name="text-a07f41">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; text-align: right;">
+        <p>zakrivljenost i volumen (3D)</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.587px; top: 193.29px;" data-name="line-90f12c" data-block-id="4bed25f75b9f25c38425617b5aba9063">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 24;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.587px; top: 244.122px;" data-block-id="1847240e28e6aa214933fc9bca9a8ed5" data-name="line-71ad0c">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 25;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.615px; top: 292.29px;" data-block-id="f3d09aa3e2e322fdd30bcbcf98b8778a" data-name="line-1f26f2">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 26;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.587px; top: 344.462px;" data-block-id="3adefc7420586260515acc10691e7eb3" data-name="line-962da7">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 27;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.587px; top: 398.5px;" data-block-id="d273603dd367b7543ea927ad39dd0bcb" data-name="line-8c1a68">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 28;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.671px; top: 453.133px;" data-block-id="2b6847bf8244958632bf098f1731576c" data-name="line-0d68a2">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 29;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.587px; top: 510.906px;" data-block-id="9ac2c0d0a5aec5d3d3afa33adbf8875c" data-name="line-d9e978">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="20.499999999999943" data-line-x2="208.08352344117498" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 30;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.08352344117498" height="20.499999999999943" viewbox="0 0 208.08352344117498 20.499999999999943"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="4.978319592419799" y1="20.558804319888544" x2="208.58352344117498" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="4.978319592419799" y1="20.558804319888544" x2="208.58352344117498" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.478319592419799,20.058804319888544) rotate(84.373)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.587px; top: 541.94px;" data-block-id="06813801ee837e750ad1602c816968a3" data-name="line-e3c53f">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.13952344117496" data-line-y2="17.059530653844146" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 31;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.13952344117496" height="17.059530653844146" viewbox="0 0 208.13952344117496 17.059530653844146"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="4.984960750834644" y1="0.867596332235167" x2="208.63952344117496" y2="17.559530653844146"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="4.984960750834644" y1="0.867596332235167" x2="208.63952344117496" y2="17.559530653844146"></line><polygon fill="#00b30b" transform="translate(4.484960750834644,0.3675963322351669) rotate(94.686)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.727px; top: 615.197px;" data-block-id="73d05f4621f4130d2b96aa3e8cf1be26" data-name="line-25fa2b">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="20.499999999999943" data-line-x2="208.08352344117498" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 32;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.08352344117498" height="20.499999999999943" viewbox="0 0 208.08352344117498 20.499999999999943"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="4.978319592419799" y1="20.558804319888544" x2="208.58352344117498" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="4.978319592419799" y1="20.558804319888544" x2="208.58352344117498" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.478319592419799,20.058804319888544) rotate(84.373)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 451.727px; top: 646.231px;" data-block-id="81ecfd5deb745906de0cfc9c3d000cdd" data-name="line-de8fc1">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.13952344117496" data-line-y2="17.059530653844146" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 33;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.13952344117496" height="17.059530653844146" viewbox="0 0 208.13952344117496 17.059530653844146"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="4.984960750834644" y1="0.867596332235167" x2="208.63952344117496" y2="17.559530653844146"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="4.984960750834644" y1="0.867596332235167" x2="208.63952344117496" y2="17.559530653844146"></line><polygon fill="#00b30b" transform="translate(4.484960750834644,0.3675963322351669) rotate(94.686)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div></section><section data-id="ea96e89d1ad143e3f31b25a3d2e12c56"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="8b901b26c220ac47ee374fa63f2d6ba1">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="3d76ef52facb0b85f15c39d83620dc7a">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="0e8ee1121d97fbac0bb0583b21c3361d">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 122.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="4a69a15fa7a994be22a7dead6eed3a66">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>
+<span style="color:#00b30b">Kategorički </span>atributi se prikazuju kanalima <span style="color:#00b30b">identiteta</span>
+</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="ef0e6b4373730ecf5e06c251efd47b36">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 407.327px; left: 34.049px; top: 171px;" data-name="text-44c94f" data-block-id="b752359ddef86d66303185c19356f610">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: right;">
+        <p>prostorna regija</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 434.492px; left: 6.884px; top: 224.622px;" data-name="text-27e001" data-block-id="a227a5d8a63dbc3cda685eae5518036a">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: right;">
+        <p>nijansa boje</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 307.981px; left: 133.395px; top: 272.79px;" data-name="text-cc9687" data-block-id="f94309ab4c31d5112d373f0f473dfb8e">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: right;">
+        <p>pokret</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 379.229px; left: 62.147px; top: 330.5px;" data-name="text-1141c8" data-block-id="201a1924428339dfeaa1975e1d019a7d">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: right;">
+        <p>oblik</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 451.587px; top: 193.29px;" data-name="line-90f12c" data-block-id="cd14af7ecc8f2f04c7d9b757985f3bcf">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 19;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 451.587px; top: 244.122px;" data-name="line-71ad0c" data-block-id="7baee17199962e7325c859dfa2f89459">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 20;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 451.615px; top: 292.29px;" data-name="line-1f26f2" data-block-id="e4f27f371670e62829dc82d91c94b45b">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 21;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 451.587px; top: 344.462px;" data-name="line-962da7" data-block-id="96172310f7bf355802f839c7b992f13b">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="208.02801442533843" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="arrow" data-line-end-type="none" style="z-index: 22;" data-line-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="208.02801442533843" height="1" viewbox="0 0 208.02801442533843 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><line class="line-element" stroke="#00b30b" stroke-width="3" x1="5" y1="0.5" x2="208.52801442533843" y2="0.5"></line><polygon fill="#00b30b" transform="translate(4.5,0) rotate(90)" points="0,4.5 4.5,-4.5 -4.5,-4.5"></polygon></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-e0d0f0" data-block-id="520e96e6d15e41fc85f260b500a12771">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 826px 429.872px; z-index: 23;">
+        <div class="sl-block" data-block-type="image" style="width: 190.467px; height: 517.487px; left: 730.766px; top: 171px; min-width: 1px; min-height: 1px;" data-name="image-cf2028" data-block-id="8699730adbf56b7cc1c5c9adb86a4736">
+            <div class="sl-block-style" style="z-index: 24; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+                <div class="sl-block-content" style="z-index: 24; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="436" data-natural-height="553" data-crop-x="0.53317" data-crop-y="0" data-crop-width="0.46683" data-crop-height="1" style="left: -218px; top: 0px; width: 408px; height: 517px;" data-lazy-loaded="" data-src="vp_p04/e124e7fd824839891e1dd76acf554968.png"></div>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="image" style="width: 47.1155px; height: 517.487px; left: 874.118px; top: 171.257px; min-width: 1px; min-height: 1px;" data-name="image-70219e" data-block-id="cd7194c2b5179a458b859865c5ae7081">
+            <div class="sl-block-content" style="z-index: 25; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="436" data-natural-height="553" data-crop-x="0" data-crop-y="0" data-crop-width="0.115479" data-crop-height="1" style="left: 0px; top: 0px; width: 408px; height: 517px;" data-lazy-loaded="" data-src="vp_p04/5023524ca715f5102ebe8fd25f77123e.png"></div>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="0dfcf6d06e1f5999de3df494dedf4376" data-name="group-b150a3">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 324.5px 489px; z-index: 26;">
+        <div class="sl-block" data-block-type="text" style="width: 630.999px; left: 9.001px; top: 420px; height: auto;" data-origin-id="4a69a15fa7a994be22a7dead6eed3a66" data-block-id="4de971bdea5a412b91437c6eb3f51734" data-name="text-083fbe">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 27; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>U oba slučaja prostorna pozicija u 2D prostoru spada u najučinkovitije kanale</li>
+                    <li>Kako se definira djelotvornost kanala?</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div></section><section data-id="7c888091bdd89138ed2a9e363fe322aa"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="1420632edad59af6a1cc84055851ba41">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="5368c8767823eebb91d6d4593b9659ca">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="209fe84acc43e04966946401c6aed6cd">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 354.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="8a60a9cd89157d67e82aa4cea77b7148">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Kako bi mogli analizirati djelotvornost vizualnog kanala moramo razumjeti njegove karakteristike
+	<ul>
+		<li>na temelju čega su rangirani kanali?</li>
+		<li>koje i koliko informacija kanal može predstaviti?</li>
+		<li>zašto su neki kanali bolji od drugih?</li>
+		<li>mogu li se koristiti neovisno jedni o drugima (interferencija)?</li>
+	</ul>
+	</li>
+	<li>Analizirati ćemo kanale po kriterijima:
+	<ul>
+		<li>
+<span style="color:#00b30b"><strong>točnosti </strong></span>(<em>accuracy</em>)</li>
+		<li>
+<span style="color:#00b30b"><strong>razlikovnosti</strong></span>(<em>discriminability</em>)</li>
+		<li>
+<span style="color:#00b30b"><strong>razdvojivost </strong></span>(<em><span class="fontstyle0">separability</span></em>)</li>
+		<li>vizualnog <span style="color:#00b30b"><strong>isticanja </strong></span>(<em>popout</em>)</li>
+		<li>percepcijskog <span style="color:#00b30b"><strong>grupiranja </strong></span>( <em>perceptual</em> <em>groupings</em>)</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="9b87939fb782b0b37bdeebfcca041bf5">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="800d2e596fcf033bd385992fd4c6d92e"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="7418a5e80969d06651951bf35d4dad3a">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="690bf42fa7efc2dc63141fc48323e2fd">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="492f09668bb7bde686918ad9337b1552">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 189.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="aa7bc95fa2b88c1bb4b5b65941693da4">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>
+<span style="color:#00b30b"><strong>Točnost </strong></span>je očiti način za kvantificiranje djelotvornosti kanala
+                        <ul>
+                            <li>koliko blizu je ljudska perceptivna prosudba u odnosu na objektivnu mjeru nekog podražaja</li>
+                            <li>znanstveno područje <em>psihofizike<em>​</em></em>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="6a184d3a2ed04ed6370bba592eeacfab">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 919.019px; left: 20.4905px; top: 677px;" data-name="text-282933" data-block-id="77bd03d69af9df9eeded173aed30ace5">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(0, 179, 11); font-size: 60%; text-align: left;">
+        <p><span class="fontstyle0">S. S. Stevens. </span><span class="fontstyle2">Psychophysics: Introduction to Its Perceptual, Neural, and Social Prospects</span><span class="fontstyle0">. Wiley, 1975.</span></p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 349.422px; height: 388.475px; left: 590.656px; top: 241.525px; min-width: 1px; min-height: 1px;" data-name="image-debae6" data-block-id="469b20677568e8c7b901bed249315e9b">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="340" data-natural-height="378" data-lazy-loaded="" data-src="vp_p04/dd8b76c75db4334a7d73edbcfd15d5a8.png"></div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="e60adf7506899add6baf90dc7954e73b" data-name="group-5b31db">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 295.328px 388.5px; z-index: 17;">
+        <div class="sl-block" data-block-type="text" style="width: 590.656px; left: 0px; top: 280px; height: auto;" data-origin-id="aa7bc95fa2b88c1bb4b5b65941693da4" data-block-id="4535abe448ab2fa7306430f9937f22d8" data-name="text-0a71ed">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>
+<span style="color:rgb(0, 0, 0)">Većinu podražaja percipiramo sa pojačanjem ili smanjenjem u odnosu na objektivni intenzitet</span><span style="color:rgb(0, 128, 0)">*</span><em><em>​</em></em>
+</li>
+                    <li>Različite vizualne kanale percipiramo sa različitom razinom točnosti</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div></section><section data-id="f6f4931b13d62b1db8c61499f9044bdb"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="a7f52c2f621afde1f470a01665bf276d">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="5ecc176d2dd10a1fda87421afdc10105">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="5a35580004cf7f61642985369128fb16">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 228.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="81cc51140a73f7a2f72ca3e3f8c22144">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Kod kriterija <span style="color:#00b30b"><strong>razlikovnosti </strong></span>postavlja se pitanje - ako enkodiramo podatke nekim vizualnim kanalom, mogu li se razlike između pojedinih stavki na pravi način uočiti ljudskom percepcijom</li>
+	<li>Potrebno je odrediti broj kategorija ili razina koje su dostupne unutar kanala i gdje je svaka razina vizualno različite od drugih
+	<ul>
+		<li>npr. debljina linije - relativno mali broj razina</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="c0d4d130464f02d33d027b0d8042f55d">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 519.753px; height: 328.189px; left: 220.124px; top: 363.976px; min-width: 1px; min-height: 1px;" data-name="image-1a1955" data-block-id="248c7e30599f9c70e73789792feb9cc1"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="2138" data-natural-height="1350" data-lazy-loaded="" data-src="vp_p04/59e0827bbae338dd2b5d3f25c9e649e6.png"></div></div></div></section><section data-id="d134be081a728be2581750aca4c1c8d3"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="d034d441ff6a88b7288ef7b2b2c6f639">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="19b5897a759c20ef2e4d4c574df112c3">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="7bb920188a6efbfec550d1f4046bfd3e">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 228.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="b3a297f1656c180c487390b10978e47a">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Nije moguće tretirati sve kanale kao međusobno neovisne
+	<ul>
+		<li>postoji mogućnost ovisnosti ili interakcije</li>
+		<li>gubi se pristup željenoj informaciji</li>
+	</ul>
+	</li>
+	<li>Neke kombinacije su potpuno <span style="color:#00b30b"><strong>razdvojive </strong></span>(pozicija + boja)</li>
+	<li>Veličina često utječe na druge kanale</li>
+	<li>Širina i visina su <span style="color:#00b30b"><strong>integralni </strong></span>kanali (teško ih je odvojiti)</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="ec7c90e9c7209d49fa0a8eb8500cc96f">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-d83ff0" data-block-id="d477e0dd86da9291ec4517e7d70a813f" style="width: auto; height: auto;">
+    <div class="sl-block-content sl-block-group-content fragment" style="transform-origin: 480px 560px; z-index: 15;" data-fragment-index="0">
+        <div class="sl-block" data-block-type="image" style="width: 914.078px; height: 170.159px; left: 22.961px; top: 472.996px; min-width: 1px; min-height: 1px;" data-name="image-d54389" data-block-id="17b3ec29056a8eec532fad798ce4cd60">
+            <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+                <div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="650" data-natural-height="121" data-lazy-loaded="" data-src="vp_p04/460b933440a5400aca75a4ef5c971787.png"></div>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 42.539px; top: 657.039px;" data-name="text-282933" data-block-id="a6512087b741dd10019c2f21344f961c">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(0, 179, 11); font-size: 60%; text-align: center;">
+                <p>Potpuno odvojivi</p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 264.3px; top: 657.039px;" data-block-id="bd38d464e4d2139b15e1c0f7394de26c" data-name="text-9c1a28">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(0, 179, 11); font-size: 60%; text-align: center;">
+                <p>Manja interferencija</p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 491.091px; top: 657.039px;" data-block-id="c451bc1c8e2d9b83b9c3bad9afe15500" data-name="text-2e250f">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(0, 179, 11); font-size: 60%; text-align: center;">
+                <p>Osrednja interferencija</p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 714.962px; top: 657.039px;" data-block-id="cc8eb5cab235e60ce4278f30888391f9" data-name="text-c31737">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(0, 179, 11); font-size: 60%; text-align: center;">
+                <p>Velika interferencija</p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 42.539px; top: 439.961px;" data-block-id="07e0311e29289af4efb5cea20df643e4" data-name="text-aa0fb3">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(0, 0, 0); font-size: 60%; text-align: center;">
+                <p>Pozicija + nijansa (boja)</p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 264.3px; top: 439.961px;" data-block-id="cdf6ac063aea82bc9eed8aca045c9c42" data-name="text-5007b7">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(0, 0, 0); font-size: 60%; text-align: center;">
+                <p>Veličina + nijansa (boja)</p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 491.091px; top: 439.961px;" data-block-id="d9fade46091c039aef4230ea837c34fe" data-name="text-8496b6">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(0, 0, 0); font-size: 60%; text-align: center;">
+                <p>Širina + visina</p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 194.422px; left: 712.851px; top: 439.961px;" data-block-id="fb96ad9f63d53962e54e6198a6121b19" data-name="text-66455c">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(0, 0, 0); font-size: 60%; text-align: center;">
+                <p>Crvena + zelena</p>
+            </div>
+        </div>
+    </div>
+</div></section><section data-id="eb932d18fa50e4e48c9e3356148bffa8"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="d07e055cb769bff087e687590cf79bcc">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="366fca71f73e68c2844b9388170674af">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="4c1a2ad2932e666815bafab8ce391374">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 196.976px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="38a50c70a5a91837cbd98131967bad06">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Mnogi kanali pružaju mogućnost vizualnog <span style="color:#00b30b"><strong>isticanja</strong></span>
+                        <ul>
+                            <li>jedan element se ističe u odnosu na ostatak skupa</li>
+                        </ul>
+                    </li>
+                    <li>Brzina pronalaska elementa ne ovisi o broju "distraktora"
+                        <ul>
+                            <li>paralelna obrada podataka</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="0deb5f9be00c04d80b32789f9aa331fa">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 155.34px; left: 0px; top: 544.66px; min-width: 1px; min-height: 1px;" data-name="image-29f3e0" data-block-id="75ebbc749e8cfde8a3b485c81cdb7e76">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content fragment" style="z-index: 15; border-style: solid; border-radius: 10px;" data-fragment-index="0"><img class="" data-natural-width="927" data-natural-height="150" data-lazy-loaded="" data-src="vp_p04/c39197f160b467dde0deea8932262ca1.png"></div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="470f064da3da8495288fee2729ed24ed" data-name="group-796ad0">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 386px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 282px; height: auto;" data-origin-id="38a50c70a5a91837cbd98131967bad06" data-block-id="c88bef7a1487ff834c6d090a3278845b" data-name="text-e08506">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Mnogi kanali pružaju mogućnost vizualnog isticanja<ul>
+                            <li>jedan element se ističe u odnosu na ostatak skupa</li>
+                        </ul>
+                    </li>
+                    <li>Brzina pronalaska elementa ne ovisi o broju "distraktora"<ul>
+                            <li>paralelna obrada podataka</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div></section><section data-id="81524165a79f8f86af3694e4b197e547"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="25c4d63e55b0d505754a6f98bef95489">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="59caa9d710558e39a164970a5ad2a395">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="a3edc07046ab0c53af7766d7abcb1640">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 189.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="e83bbf2ec70a1db1316350ca7c47e62a">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Kombiniranje kanala utječe na sposobnost isticanja</li>
+	<li>Većina parova kanala ne podržava isticanje, ali postoje iznimke
+	<ul>
+		<li>prostor i boja ili pokret i oblik</li>
+	</ul>
+	</li>
+	<li>Sa tri ili više kanala isticanje postaje nemoguće</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="391d0cb3e46e6de274785ec770321fe6">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="image" style="width: 525.823px; height: 370.524px; left: 414.255px; top: 304.738px; min-width: 1px; min-height: 1px;" data-name="image-6dd977" data-block-id="8ebfd1d1733617e04957c09a51779aea"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content fragment" style="z-index: 15; border-style: solid; border-radius: 10px;" data-fragment-index="0"><img class="" data-natural-width="623" data-natural-height="439" data-lazy-loaded="" data-src="vp_p04/0b1380f315db2e3bf369a31f31d3a94b.png"></div></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" style="height: auto;" data-block-id="7dc8e104af517d904e14a49ee149546b" data-name="group-acfd0b">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 178.02px 472.238px; z-index: 16;">
+        <div class="sl-block" data-block-type="text" style="width: 356.04px; left: 0px; top: 304.738px; height: auto;" data-origin-id="e83bbf2ec70a1db1316350ca7c47e62a" data-block-id="da8c568cb9d96a0ae052a2e957c72065" data-name="text-fd2ccb">
+            <div class="sl-block-content fragment" data-placeholder-tag="p" style="text-align: left; z-index: 17; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text" data-fragment-index="0">
+<ul>
+	<li>Nagib (a), veličina (b) i oblik (c) pružaju dobro isticanje</li>
+	<li>Grupiranje (d) i smjer sjene (e) su također primjenjivi</li>
+	<li>Paralelizam (f) je teško uočiti</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div></section><section data-id="1c2679c6098cf42daca37ba932e8d750"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="11b244e772edf7d3357072f51673af38">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Djelotvornost kanala</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="c0adcf006e2e93ca7226708b431a7b8e">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="09fb88b7a07f8857c48b8397f97fa0cf">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 313.976px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="590a9e5a74b86f2a5e7f2334cb9b898e">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Efekt percepcijskog grupiranja može nastati:
+                        <ul>
+                            <li>korištenjem oznaka za mrežne podatke
+                                <ul>
+                                    <li>oznake povezivanja ili sadržavanja</li>
+                                </ul>
+                            </li>
+                            <li>korištenjem kanala identiteta za prikaz kategoričkih podataka
+                                <ul>
+                                    <li>manje učinkovito od mrežnih oznaka</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Treći način grupiranja je <span style="color:#00b30b"><strong>blizina </strong></span><span style="color:rgb(0, 0, 0)">(<em>proximity</em>) </span><span style="color:#00FF00"><strong> </strong></span>
+                        <ul>
+                            <li>pozicioniranje elemenata u istoj prostornoj regiji</li>
+                        </ul>
+                    </li>
+                    <li>Posljednji kanal grupiranja je <span style="color:#00b30b"><strong>sličnost </strong></span>(<em>similarity</em>)
+                        <ul>
+                            <li>za kanale boje ili pokreta, eventualno oblika</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="b3bb779bc598eeb050b5ee49c30b514c">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div></section><section data-id="d7076445d30a162a10b7b8687a8b7cd3"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="c196970822a1f886fc4caee4b1c5ba51">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Relativna i apsolutna prosudba</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="2c2c7217ff164b5eea4f8613d5215f8f">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="0adab7da6d32b2012b0fa3b55972a59e">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 275.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.976px; height: auto;" data-name="text-c5947b" data-block-id="8b54bcbb84f3464aa18fa7abf4a4b4f2">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+                <ul>
+                    <li>Ljudski perceptivni sustav je temeljen na <span style="color:#00b30b"><strong>relativnim </strong></span>procjenama, a ne <span style="color:#00b30b"><strong>apsolutnim </strong></span>- Weberov zakon [<a href="https://www.britannica.com/science/Webers-law" target="_blank">1</a>]
+                        <ul>
+                            <li>npr. promjena u duljini koju možemo detektirati ovisi o ukupnoj duljini promatranog objekta</li>
+                        </ul>
+                    </li>
+                    <li>Kada raspravljamo o točnosti i razlikovnosti naše percepcije moramo uzeti u obzir apsolutne i relativne mjere
+                        <ul>
+                            <li>puno lakše je uočiti razliku između dva objekta ako su poravnati jedan uz drugoga nego ako su razdvojeni</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="0d2812b7f835c08779bc6e721dd7ab69">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 553.198px; height: 242.024px; left: 203.401px; top: 457.976px; min-width: 1px; min-height: 1px;" data-name="image-bb2d6b" data-block-id="c0f4d57527778a333359d7ba0369dedd">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);">
+        <div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="608" data-natural-height="266" data-lazy-loaded="" data-src="vp_p04/c316d4377ed61be460071822e3c832ee.png"></div>
+    </div>
+</div></section><section data-id="c3f34d3fb242c3339f064cd6fe964421"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="61fcb64713d312062cb7e164ece59d6f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Relativna i apsolutna prosudba</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="e4779439c4941958125b3b2e920547f3">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="787b595d5cb3c4c4560cb97c524525c5">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 470.039px 169.476px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 940.078px; left: 0px; top: 92.9755px; height: auto;" data-name="text-c5947b" data-block-id="b3f3f873b899062eefdb73d5b0841c95">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Još jedan primjer relativne prosudbe je percepcija boje i osvjetljenja koja je potpunu kontekstualna
+	<ul>
+		<li>doživljavamo ih na temelju kontrasta sa okolnim bojama</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="17ef576be815afab52e4c367e76a5132">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_p04/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 423.256px; height: 330.979px; left: 56.277px; top: 280px; min-width: 1px; min-height: 1px;" data-name="image-766d88" data-block-id="f574c575d51173926fb6e1c6362c4d4c"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="700" data-natural-height="559" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.979228" style="left: 0px; top: 0px; width: 423px; height: 338px;" data-lazy-loaded="" data-src="vp_p04/2ee441fcd1ccbe5fa2e6584b751d97f7.png"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 392.625px; height: 330.979px; left: 540.078px; top: 280px; min-width: 1px; min-height: 1px;" data-name="image-e95ff0" data-block-id="4414846f7a163ca6e58fd97beb67905d"><div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content fragment" style="z-index: 16; border-style: solid; border-radius: 10px;" data-fragment-index="0"><img class="" data-natural-width="657" data-natural-height="556" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.996124" style="left: 0px; top: 0px; width: 393px; height: 332px;" data-lazy-loaded="" data-src="vp_p04/343bd95d02d285751f3d7697a477a02b.png"></div></div></div></section><section data-id="9206c399bad97f1e40354b4f912c7d98">
+
+
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 475.021px; height: 475.021px; left: 0px; top: 92.0035px; min-width: 1px; min-height: 1px;" data-name="image-b374ff" data-block-id="7997f35e352a35bfd7192a426ea6d35f"><div class="sl-block-style" style="z-index: 10; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 10; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="960" data-natural-height="960" data-lazy-loaded="" data-src="vp_p04/c600df8aad7702bbd80acc075cf90e8e.png"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 475.021px; height: 475.021px; left: 484.979px; top: 92.0035px; min-width: 1px; min-height: 1px;" data-name="image-b9a688" data-block-id="9c15f894968e94bf5b0034a16952727e"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="1081" data-natural-height="1081" data-lazy-loaded="" data-src="vp_p04/a9ad8894780e93e4a2a9989b229505c4.png"></div></div></div></section><section data-id="c7596487d9f244da905e05cf0e76e427" data-background-image="vp_p04/80c6082b95f0da4c38268e45bbdd263e" data-background-opacity="0.3"><div class="sl-block" data-block-type="text" style="width: 876px; left: 41px; top: 178px; height: auto;" data-block-id="1eebee16a1c64bc0c535c07ba97ff585" data-name="text-55fdd4"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11; padding: 20px; line-height: 1.04;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<h1>Hvala na pažnji!</h1>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-a5c0c7" style="width: auto; height: auto; left: 160px; top: 267.797px;" data-block-id="33f92e275b29906facb4817fd7b77441"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="640" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 10;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="640" height="1" viewbox="0 0 640 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="640" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0" x2="640" y2="0"></line></svg></div></div></section></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2490698,"slug":"vp_p04","title":"vp_p04","description":"Vizualizacija Podataka - Uvodno predavanje","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":"2020-11-27T13:47:48.491Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/0f8520e30d028378ec3a1e303347a937/thumb.jpg?1666985205","view_count":0,"user":{"id":1363939,"username":"gzaharija","name":"Goran Zaharija","description":"","thumbnail_url":"https://lh5.googleusercontent.com/-AqW8L_hCWdY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnGN5x7VggKeiiZ5zU8LIlPw4Thlw/photo.jpg","account_type":"lite","team_id":null,"settings":{"id":5710954,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"merriweather","theme_color":"silver-green","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":24,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1668497396275,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"linear","upsizing_enabled":true,"notes":{"c34425e6a5d1763ca6a71781677f0112":"","f983f7445a8cbe89dfd9ae67e07fb21b":"","f1b24faa29e4587c93d6d2bdaa0d05d4":"","07b517c898b6a58d741901cece914588":"","be23eb75799fa0a6e5e4176a45483c01":"","bf6bee7726f7d711efab81cbbffd34e2":"","e25a2f509cd40677e833243b38d58469":"","e5ad1468f389fe2c84f40c7ec7ca63e2":"","f95fe71cd18a6965d107e31ff71b2638":"","615c4969a96995de7ade317fd1221fc1":"","2e6e78c71055336613c1274d5aafc65c":"","c7596487d9f244da905e05cf0e76e427":"","b32032a43f89a8e5fa404cac7b0ccbbf":"","29aece7d460f48342c3c7ba7942621d7":"","20410d9d803df2c53a4ca11c1937d6c8":"","99e5fb231a5aae4f5de5790432e6afeb":"","d5a6c55a2713f7f1fa7822027f386897":"","10ab16e65becac18cc3a5fd537bbfdad":"","412436b66d3afcc2429be09735864390":"","63d7d86d225142dad5f977b409958b83":"","23df7cac2af231396165e1eb2909c234":"","f70e1cdb5245338466e3d447e0ecaf4a":"","5cf4e38e4e941967733a710a7c551ddf":"","ee16d03c297f70094ba20abc32644711":"","ba4cbd8129e1deb68a618a82fdf9c5bf":"","26e7bab17b072441b5d936f3be1bd8a9":"","950932f3570696738675c24c00b402c2":"","627ed4b02167a07f461ab60507c2de48":"","4c351c69e0ada7f4e182a53607ac5674":"","d2140a1717e06501df444c00c78c3baf":"","be47d02ad2a04c635ce15af0ebf31cc8":"","84d836ffc26a1ef474c2a0847afa82e6":"","9b97fa75715e2b12241dee3bcd0dcbb6":"","83742d4a782959479ba50439cf915423":"","24f026484510a6abf241f96e50b4a625":"","6802cd0888e714aa35ae895f94b800ae":"","1f768d151e431efdbe81758f042817da":"","ba1d75634158fc66f766e4bb2ef11a5f":"","992b741a847bc1cd7c4eecdcaa5b2a21":"","6645c53bb488dd2ad139cd77fb50d5eb":"","c590afee95abe7c346a090367f7b7c2a":"","019db375adfe97a38eb32600808cf65d":"","f69f36d8396fe1c58926a2e48d2e5b4e":"","5176d1ce298dbb886c4df79e03e42267":"","20a7b57a62988ce4120a048b284b3ded":"","8c4a17bd85f1ffbb6ba4e01880e5584a":"","c3ed9e577f6f21dae8371920fa30d7b0":"","55f1ac4fa46615722c4b4d1828eab3fe":"","815758e5e0962f6ea2d4b8c9293c8397":"","546b65e9a1e1ff679e8c7b54cc06869f":"","eaddc8051fe25792de84df94325bfcbe":"","f26838cda444936bfc4d9467a4202816":"","8bf4ff6493070dd2cca104a07149b63f":"","a52ff486ed0f7175196b8ce251fd4106":"","30684164e98b420d7a3103943d3b8e9a":"","38d53897c55dfdb74f4a26af64d44ba8":"","d31934f172f169885c3466b8eb774caf":"","184e751fe375e60a52420bdf6c0f2dd8":"","f1836fcdd5d834f32486ffb9207c9947":"","56700c0fdb481c7127f24941fa2c81c1":"","85d9d07e5eaf8597b8ab1a080ca2ec04":"","0d56572ab3e13ac8d8d62310ce935b76":"","ec1bd711963c6c660d0cf26262339067":"","ece533995c50068e7bfd3e7d7c519c46":"","205443ae1283741e7a4e94a647d52ab2":"","b64c6d959a67a9ff0fb87884e71c0961":"","47a8b2e5401250d7569f218cd899acd4":"","1e7db8bce152efeb0bccfcd9bdddb755":"","81221819984c610d54cf10c5e0b93928":"","17ec654c7abdf8c482b1b28805a7f29f":"","ccf2cab113a59cfde891d4b3bf205e38":"","e224ac3097917184c2c9e6281ae696c1":"","865181bd63b7c9814d77bda1f04b4970":"","f2356a9c096b3e9f3c95c3fff7ade6ad":"","0684400fefc2d1c58ef0aae9d4b861ee":"","560d8c9b55c4bcc4aaa334f6e7654606":"","4dbf210d12298e8af25368d8d81d4a1f":"","5d71395b71217e80eef6ff860e21cd65":"","67b8120e1f8593389047d32fd994141b":"","4d91f68a204fe47c50d89c3d8d598859":"","23da3f8388ffff7912f0f9eb639e24d6":"","4e5891a4ff001e2ef8f27ccc64dc7360":"","71e9466b6656db893e4c86bc4582aac9":"","a5a1e0a3d0a208a2324fadae546e3405":"","7dd4ed1233fb1b0e5b33c923fd3dd90e":"","73220feab37accdacfce0453b1a0df20":"","5b4b0500729741507f3dd336fb0cc941":"","427503dc3e1aff93942c8d3a09ba287f":"","33095949f79837d45c8ebeb27ddfeca1":"","0bf1dfa1638820e624c0e937e48d6c60":"","aa7ae0d24b5dcf13e789934676d98bd3":"","dc1cb21534e8a4225c3870d14d756618":"","89ca3198a64663dee84d7b63ff2f1a96":"","ade9eeeaa28075432dd2542963f95e63":"","dbb01291a999f4cef793f9e6bb785576":"","05a03fd7a957ec281f72fc2d7e8c9573":"","f73b59bbdb904e802750707c8827198c":"","41b313fd7974dfc07a3a629fb894341d":"","903a2d9ba8c0be469230238dd1bfccbe":"","1a26d3a1f4f149a17a20362e73c28ad5":"","34088081ef2dba7778d8c9442c0b7855":"","098e235b0161cb85c10102c6970a40aa":"","6d4cc2a3eb071afeb09da69547c0e640":"","603da8252fecb9cb0f17d2c4b3c81ef4":"","ccc19a1d4fc45c69ffcf45b29d24bdd0":"","d55ba2c56f11ded0ea90fbb485af7ec3":"","af740f827e2f690e825bd58675e02d3a":"","36a60a5673851463d7ff63dc342d316b":"","313615904afd92bb466035c6d14b1251":"","9206c399bad97f1e40354b4f912c7d98":"","58e9eee26edb6e057cc19bab39d16c90":"","e56329c5ea0a4bef7a5f28662518fd5d":"","9ac751fbfc62ae1fe9e9b355ad66a4aa":"","f61e0425cdd91580ecd4c034ac494d92":"","efd67288f6e33ede9a37ca45777ead3b":"","c16d093a81d6b2fcb98c254bf0895ae6":"","dbbbc10cdeeeed71ab470b97b3ba5a56":"","efa4975c92d34574586f3ba90a5c41b3":"","ea96e89d1ad143e3f31b25a3d2e12c56":"","7c888091bdd89138ed2a9e363fe322aa":"","800d2e596fcf033bd385992fd4c6d92e":"","f6f4931b13d62b1db8c61499f9044bdb":"","d134be081a728be2581750aca4c1c8d3":"","eb932d18fa50e4e48c9e3356148bffa8":"","81524165a79f8f86af3694e4b197e547":"","1c2679c6098cf42daca37ba932e8d750":"","d7076445d30a162a10b7b8687a8b7cd3":"","c6253f7a558b4e523b178268503278bd":"","c3f34d3fb242c3339f064cd6fe964421":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = '../lib/fonts/';
+		</script>
+
+		<script src="../lib/reveal.js"></script>
+		<script src="../lib/reveal-plugins.js"></script>
+		<script src="../lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "linear",
+
+				transition: "slide",
+				backgroundTransition: "fade",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
