@@ -99,5 +99,66 @@ async function crtajLinijski() {
 
   // 7. Postavljanje interakcije
 
+  const okvirDodir = granice.append("rect")
+  .attr("class", "okvirDodir")
+  .attr("width", dimenzije.grSirina)
+  .attr("height", dimenzije.grVisina)
+  .on("mousemove", onMouseMove)
+  .on("mouseleave", onMouseLeave)
+
+  const detalji = d3.select("#detalji")
+  const detaljiKrug = granice.append("circle")
+    .attr("r", 4)
+    .attr("stroke", "gold")
+    .attr("fill", "white")
+    .attr("stroke-width", 2)
+    .style("opacity", 0)
+
+  function onMouseMove(e, data){
+    const pozicijaMisa = d3.pointer(e)
+    const hoverDatum = xSkala.invert(pozicijaMisa[0])
+
+    const udaljenostOdHover = d => Math.abs(xAccessor(d) - hoverDatum)
+    const najbliziPodatak = d3.least(dataset, (a,b) => (
+      udaljenostOdHover(a) - udaljenostOdHover(b)
+    ))
+
+    //const najbliziPodatak = dataset[najbliziIndeks]
+    const najbliziX = xAccessor(najbliziPodatak)
+    const najbliziY = yAccessor(najbliziPodatak)
+
+    const formatDatuma = d3.timeFormat("%A, %d. %B %Y.")
+    detalji.select("#datum")
+      .text(formatDatuma(najbliziX))
+
+    const formatTemp = d => `${d3.format(".1f")(d)}°C`
+    detalji.select("#temperatura")
+      .text(formatTemp(najbliziY))
+
+    const x = xSkala(najbliziX) + dimenzije.margine.left
+    const y = ySkala(najbliziY) + dimenzije.margine.top
+
+    detaljiKrug
+      .attr("cx", xSkala(najbliziX))
+      .attr("cy", ySkala(najbliziY))
+      .style("opacity", 1)
+
+    detalji.style("transform", `translate(
+      calc(-50% + ${x}px),
+      calc(-100% + ${y}px)
+    )`)
+    detalji.style("opacity", 1)
+
+
+  }
+
+  function onMouseLeave(e, data){
+    detalji.style("opacity", 0)
+    detaljiKrug.style("opacity", 0)
+  }
+
+
+
+
 }
 crtajLinijski()
