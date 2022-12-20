@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>vp_v08</title>
+
+		<meta name="description" content="Vizualizacija Podataka -Vježba 08">
+
+		<link rel="stylesheet" type="text/css" href="../lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-merriweather theme-color-silver-green">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="5b8a4a036e8598747befd838862d256d"><section data-id="f983f7445a8cbe89dfd9ae67e07fb21b" data-background-opacity="0.25" data-background-image="vp_v08/a83adfb3e588cd9d9e18ec53aefc8415"><div class="sl-block" data-block-type="text" style="width: 876px; left: 41px; top: 178px; height: auto;" data-block-id="c6f3506a951073356126072c64b73ba7"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 12; padding: 20px; line-height: 1.04;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<h1>Vizualizacija podataka</h1>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-a5c0c7" style="width: auto; height: auto; left: 323px; top: 326px;" data-block-id="1ae6f23f85340701e19030440fd20e20"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="314" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="314" height="1" viewbox="0 0 314 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="314" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0" x2="314" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 877px; left: 41px; top: 326px; height: auto;" data-name="text-d18e72" data-block-id="689a62ac335c3e0957668b823ebb6c68"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 14; text-align: center; color: rgb(0, 0, 0); font-size: 120%; padding: 20px;" data-placeholder-text="Text">
+<p>Vježba 08</p>
+</div></div></section><section data-id="f1b24faa29e4587c93d6d2bdaa0d05d4"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="8af19301c437a0c2cd5ac1932b93911d">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Vježba 08</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="4a50f3a040a3fdf8f9482654901bb1a9">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="7d7b6bbeada2f231ebedb9eb87772feb">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 232px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 95.5px; height: auto;" data-name="text-c5947b" data-block-id="1f931699ed1eb5fd2d5669bc20a62cf5">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Cilj vježbe je upoznati se sa još jednom vrstom grafa
+	<ul>
+		<li>
+<em>box-plot</em> ili <em>whisker-plot</em> (kutijasti dijagram)
+		<ul>
+			<li>predstavlja 5 karakteristika
+			<ul>
+				<li>minimum i maksimum (bez <em>outlier</em>-a)</li>
+				<li>medijan</li>
+				<li>prvi i treći kvartil</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="a08fd51eaecc5238c693b706edc4e072">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 591.65px; height: 295.825px; left: 184.175px; top: 382.959px; min-width: 1px; min-height: 1px;" data-name="image-9ef7fe" data-block-id="1152b5f6bd81894a31bc40dd1176e807"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="2500" data-natural-height="1250" data-lazy-loaded="" data-src="vp_v08/b4484695b9d3116c27539a0d0a09796a.png"></div></div></div></section><section data-id="61b0e840481db2ef3807b7785d51e9f2"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="2a4bf1e53bcd1d3973ca1e3cc795cd11">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Učitavanje skupa podataka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="89ac88e4530190fb43b797bb6152f402">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="dea9c5386ca6f6d9b25c52bc1cb86fda">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 242px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="b04a1b91afd72e25aff0307c4b14c570">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Prvi korak je učitavanje podataka
+	<ul>
+		<li>koristimo već poznati skup podataka</li>
+		<li>morati ćemo ga modificirati kako bi odgovarao našem prikazu
+		<ul>
+			<li>365 dana ćemo rasporediti u 12 mjeseci</li>
+			<li>moramo parsirati datum i napraviti metodu za dohvat broja mjeseca</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="f60b7a1674149190fdc72d211e3b9362">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 577.921px; height: auto; left: 191.039px; top: 422px;" data-block-id="7114526c5093bcce41abb40c4cdf1557">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">  const dataset = await d3.json("/../vrijeme.json")
+
+  const datumParser = d3.timeParse("%Y-%m-%d")
+  const brojMjeseca = d3.timeFormat("%m")</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="8d595efb4f6b0aa5ae736c8d7edc5345"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="55806f538576b6a4599a51f4262a6ab6">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Učitavanje skupa podataka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="a9b408c3bed64d183ae5354a5e6765ba">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="c49829f87451cb84b0c22b4120f2abdf">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 223px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="7f1f228576855fb03d9b5ef64588d521">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Podatke ćemo grupirati koristeći <u><a href="https://github.com/d3/d3-array#group" target="_blank">d3.groups()</a></u> metodu koja po odabranom ključu grupira skup podataka
+	<ul>
+		<li>metoda prima dva parametra
+		<ul>
+			<li>skup koji grupiramo</li>
+			<li>ključ po kojem ćemo ga grupirati</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="0a02e16dd187d037176f24e103f3cc5f">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 855.921px; height: auto; left: 52.0395px; top: 350px;" data-block-id="fb14120c2db2bdbbd4b235d3f92c918a">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">  const podaciPoMjesecu = d3.groups(dataset, d =&gt; brojMjeseca(datumParser(d.date)))
+  console.log(podaciPoMjesecu)</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="53c80de5833786d7b76f72bb24d18383"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="2d2ddbb3b7c21b7ebe0ac408b7d7cd20">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Učitavanje skupa podataka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="c5ce037da9655f5b5e049f953ed1fd67">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="12e2d8d68e30016a0dc0deb9f450fc2a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 204.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="bb8912fff5a1cfd2f09239df11ef1173">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Rezultat nam je niz sa 12 elemenata
+	<ul>
+		<li>svaki element sadrži dva podataka
+		<ul>
+			<li>ključ po kojem smo grupirali</li>
+			<li>pod-niz sa svim pripadajućim podacima</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="f737d031e3d9cd24785f5fae40a3d11b">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="image" style="width: 359.362px; height: 346.401px; left: 279.319px; top: 316.799px; min-width: 1px; min-height: 1px;" data-name="image-df4c4b" data-block-id="047e8c82979e4e81f3ef831f3f128a50"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="305" data-natural-height="294" data-lazy-loaded="" data-src="vp_v08/66d1908fb35366028c29034be6b9acb6.png"></div></div></div></section><section data-id="54a1913d63e2e90fdc441394f87adc10"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="c3b8cce5160690e39b365a5b6caed163">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Učitavanje skupa podataka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="ba78161b0f631ef0c740b6ee3530a560">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="637940afb12ec7f6224eab6f3055d576">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 286.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="3390229833ba4e806b0aeda2fb8737cb">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Potrebna su nam još dvije <em>accessor</em> funkcije
+	<ul>
+		<li>jedna koja dohvaća željenu metriku koju ćemo prikazati pomoću box plota
+		<ul>
+			<li>u ovom slučaju <em>temperatureMax</em>
+</li>
+			<li>druga će nam biti za dohvaćanje broja mjeseca</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Proširiti ćemo naš skup podataka sa podacima potrebnim za iscrtavanje box-plota za odabranu metriku
+	<ul>
+		<li>možemo unaprijed napisati <em>accessor</em>
+</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="6090a95738e9648e5e52000004bda5f4">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 613.074px; height: auto; left: 173.463px; top: 510px;" data-block-id="35e4e754ec1c95dab855e7a1955d338b">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const yAccessor = d =&gt; (d.temperatureMax - 32) * 0.5556;
+const mjesecAccessor = d =&gt; d.mjesec</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="b4a2e9fd9b1814a3be9a6ea238e5b118"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="a84a0e7ea60cbe70f68f05869e415d71">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Učitavanje skupa podataka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="725339f136ad8a112a388054e6d1c090">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="d1db43bd74e8d355bc3e0ee9094a27f4">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 327.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="5838f433dd1041e908c1e8d1b3b0499c">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Podaci koji nam trebaju su
+	<ul>
+		<li>prvi i treći kvartil
+		<ul>
+			<li>koristiti ćemo metodu <u><a href="https://github.com/d3/d3-array#quantile" target="_blank">d3.quantile()</a></u>
+</li>
+		</ul>
+		</li>
+		<li>medijan - <u><a href="https://github.com/d3/d3-array#median" target="_blank">d3.median()</a></u>
+</li>
+		<li>interkvartilna vrijednost (IQR) - razlika q3 i q1</li>
+		<li>minimalne i max vrijednosti
+		<ul>
+			<li>sa i bez outliera (koje ćemo posebno izdvojiti)</li>
+		</ul>
+		</li>
+		<li>dodati ćemo i brojčanu oznaku mjeseca</li>
+	</ul>
+	</li>
+	<li>Sve navedene podatke ćemo dodati u 12 elemenata koji predstavljaju podatke po mjesecima</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="424651d4f16d8ed270d0d79bacc42b86">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+</section><section data-id="ffd5b007dcb0c3b5af8e713090217728"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="eae3cfdfffb2f6082c8ded84725a4b3f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Učitavanje skupa podataka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="998af847e51f8f6533ef003ef8ee8129">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="4d004decc497eb6237e093bf5aafd4b2">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 137.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="719479a2339618d69fd2d84b097a4f76">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Konačan rezultat izgleda ovako:</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="2529a43c6056fe3790d4179220f5ef50">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 808.259px; height: auto; left: 75.8705px; top: 183.664px;" data-block-id="03824090737f7341e55180a65ae099ed">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">  const poMjesecuProsireno = podaciPoMjesecu.map(mjesec =&gt; {
+    const mjesecTemp = mjesec[1].map(yAccessor).sort((a,b) =&gt; a - b)
+    const q1 = d3.quantile(mjesecTemp, 0.25)
+    const median = d3.median(mjesecTemp)
+    const q3 = d3.quantile(mjesecTemp, 0.75)
+    const iqr = q3 - q1
+    const [min, max] = d3.extent(mjesecTemp) 
+    const rasponMin = d3.max([min, q1 - iqr * 1.5])
+    const rasponMax = d3.min([max, q3 + iqr * 1.5])
+    const outliers = mjesec[1]
+      .filter(d =&gt; yAccessor(d) &lt; rasponMin || yAccessor(d) &gt; rasponMax)
+
+    return {
+      ...mjesec,
+      mjesec: +mjesec[0],
+      q1, median, q3, iqr, min, max, rasponMin, rasponMax, outliers
+    }
+  })</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="0be1d9ae103ec7a2a0b404172c25519e"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="aafde610ef0861d641e22342af289da2">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+        <h2><strong>Učitavanje skupa podataka</strong></h2>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="0cb9b89dcb896424fed08f7c7f052770">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="a396a0b83fada722a79ee2759bfbfef3">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 137.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="d8f14088138c8240ccda2ebf3c1a5449">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Možemo provjeriti imamo li ispravan skup podataka</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="b76c9ffb2f07574ba729eee88a593dab">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="image" style="width: 634.709px; height: 447.755px; left: 160px; top: 196.123px; min-width: 1px; min-height: 1px;" data-name="image-38d874" data-block-id="55cced76142181a5e3c3aeee44b0c1ed"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 15; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="679" data-natural-height="479" data-lazy-loaded="" data-src="vp_v08/384ac12db324d021ed38a4d7d5877c5f.png"></div></div></div></section><section data-id="a06a364cc977feea9c9fccf7697d8f59"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="16a651490df93cd234fa0683361b45e3">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Crtanje grafa</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="5cd8ac61ad8af90f08c14f887f91f220">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="2dd3887ad0c31fbdec58a8c829a1ff60">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 137.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="020a11060de8405459e33d2ca8d4010d">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Dimenzije grafa i iscrtavanje okvira i granica su standardni...</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="ba6cd7d7905d678335a83cfd1068749b">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 759.349px; height: auto; left: 100.325px; top: 210px;" data-block-id="f36e60b49a437b6958e3ba48d46c94a6">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 14px; line-height: 17px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">// 2. Dimenzije grafa
+const sirina = 800
+let dimenzije = {
+  sirina: sirina,
+  visina: sirina * 0.6,
+  margine: { top: 30, right: 10, bottom: 30, left: 50,},
+}
+dimenzije.grSirina = dimenzije.sirina 
+  - dimenzije.margine.left - dimenzije.margine.right
+dimenzije.grVisina = dimenzije.visina 
+  - dimenzije.margine.top - dimenzije.margine.bottom
+
+// 3. Crtanje grafa
+const okvir = d3.select("#okvir")
+  .append("svg")
+    .attr("width", dimenzije.sirina)
+    .attr("height", dimenzije.visina)
+
+const granice = okvir.append("g")
+    .style("transform", 
+           `translate(${dimenzije.margine.left}px, ${dimenzije.margine.top}px)`)</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="d9a355c8a435c886cc75905e0d890933"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="8fe9d4d79600c4ed1fac9ac9fc5e203a">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Definiranje razmjera</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="d0037222f66f823086019d4f1cde8038">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="6b3974c7e7dc483f139c17ebe23401a8">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 219.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="190a9b08f6221b87d13f4c15ab580207">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Idući korak nam je definiranje razmjera
+	<ul>
+		<li>po <em>x</em> osi ćemo imati vrijednosti od 1-13 (granice stupaca za mjesece)</li>
+		<li>domena <em>y</em> osi su minimalne i maksimalne vrijednosti za našu metriku (svojstvo <em>maxTemperature</em> koju pretvaramo u °C)</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="d5a8402737c08943a125cf4082f1adb0">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 471.837px; height: auto; left: 244.082px; top: 373.5px;" data-block-id="8e0ac0745bb877657d3602953b081c8d">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const xSkala = d3.scaleLinear()
+  .domain([1, podaciPoMjesecu.length + 1])
+  .rangeRound([0, dimenzije.grSirina])
+  .nice()
+
+const ySkala = d3.scaleLinear()
+  .domain(d3.extent(dataset, yAccessor))
+  .range([dimenzije.grVisina, 0])
+  .nice()   </code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="4fb01786a3dc0494fc763bfc852da75a"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="3242eb730ea25e9a29f8019752e8a0fa">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Definiranje razmjera</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="761296c2dacb6f6173d05cdabfe56618">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="cd3a6ca87c5d902b47acf848834c1c83">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 283px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 109px; height: auto;" data-name="text-c5947b" data-block-id="f002ccfaa3dab5c94cf220558a153430">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Sjetite se izrade <em>histograma</em>
+	<ul>
+		<li>također smo grupirali podatke u grupe/košare</li>
+		<li>koristili smo d3.histogram()
+		<ul>
+			<li>dobijemo x0 i x1 svojstva koji su granice podataka</li>
+		</ul>
+		</li>
+		<li>iskoristiti ćemo d3.bin() (nova verzija histogram metode)</li>
+		<li>podijeliti ćemo podatke u 12 kategorija, s obzirom da su nam mjeseci cijeli brojevi od 1-12 ne bi trebalo biti problema sa <em>tresholds</em> parametrom</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="a06ee291e400af62a4fa537d30426cb8">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 566.166px; height: auto; left: 196.917px; top: 481.5px;" data-block-id="a155e1a8bfc2018ca7416dc964d457fa">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const generatorGrupa = d3.bin()
+  .value(mjesecAccessor)
+  .thresholds(podaciPoMjesecu.length)  // 12
+ 
+const grupe = generatorGrupa(poMjesecuProsireno)</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="a978b52c338596de77fe9f16d3b4cf4d"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="654e7711beff3699cea89e26329db20c">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje podataka</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="8a8244afb34a3dd2be37088d55e4373e">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="004ae2cfab66e6511194cc76b2dfee9a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 236.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="6727adccd1479fdee5a0b4223e57d441">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Možemo početi iscrtavati podatke</li>
+	<li>Algoritam nam je poznat
+	<ul>
+		<li>odaberemo sve željene elemente
+		<ul>
+			<li>pridružimo im podatke
+			<ul>
+				<li>izbacimo stare elemente</li>
+				<li>stvorimo nove elemente</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		<li>spojimo postojeće i nove elemente</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="fa54390a4263d8e3f40d0090c9c48913">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 566.166px; height: auto; left: 50.4057px; top: 394.5px;" data-block-id="f6d1d11c9f10988ebad2b5e4a241dbd2">
+    <div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 15; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const paddingStupci = 7
+let sviStupci = granice.selectAll(".stupac")
+  .data(grupe)  
+
+sviStupci.exit()
+    .remove()  
+
+const noviStupci = sviStupci.enter().append("g")
+    .attr("class", "stupac")
+  
+sviStupci = noviStupci.merge(sviStupci)</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 303.886px; height: 484.883px; left: 640px; top: 116.089px; min-width: 1px; min-height: 1px;" data-name="image-c8e109" data-block-id="8a906b7182079121cac2be47fc716f1f"><div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 0px 0px 5px) opacity(100%);"><div class="sl-block-content" style="z-index: 16; border-style: solid; border-radius: 10px;"><img class="" data-natural-width="319" data-natural-height="509" data-lazy-loaded="" data-src="vp_v08/2a3cc570c47a2a58554e0a93bd80308e.png"></div></div></div></section><section data-id="fb7178e2460c26869f27fc92f45ba1b0"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="b5c9fc6b63fca538d59e35ad31260a78">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje podataka</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="d815ea8417913161268feb44d421b48f">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="43558fb130add3a68ca7e31d63bfa6d1">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 210.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="7a2cecaf506d3151535778aad0378589">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Sada imamo sve za crtanje elemenata
+	<ul>
+		<li>početi ćemo od linija koje idu od minimalne do maksimalne vrijednosti
+		<ul>
+			<li>pokušajte sami svakom stupcu dodati <em>line</em> element</li>
+			<li>linija mora biti na sredini stupca (znamo raspone po x osi)</li>
+			<li>početak i kraj linije su minimalne i maksimalne vrijednosti</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="4c1c8f3e35e1b46a206e5e80501a2e69">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 660.495px; height: auto; left: 196.917px; top: 378.444px;" data-block-id="bdc56fb7aac5ce3c23b54863c6bb2474">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const sirinaStupca = bar =&gt; xSkala(bar.x1) - xSkala(bar.x0)
+const rasponLinije = sviStupci.append("line")
+    .attr("class", "linija")
+    .attr("x1", d =&gt; xSkala(d.x0) + sirinaStupca(d) / 2)
+    .attr("x2", d =&gt; xSkala(d.x0) + sirinaStupca(d) / 2)
+    .attr("y1", d =&gt; ySkala(d[0].rasponMin))
+    .attr("y2", d =&gt; ySkala(d[0].rasponMax))</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="d02d0a95050daf406ada27f659af8f2e"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="82e5a6224f153a4a6d936a49fec6c868">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje podataka</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="a2c27974068e6b5d193be69e6b937e81">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="40d8193c48d7bb7fbcf865b1e7c9a580">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 236.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="653fd39b08ff121e36ab2ed8327046a8">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Idući element su pravokutnici (<em>rect </em>elementi)
+	<ul>
+		<li>početna točka (x,y) je gornji lijevi rub pravokutnika
+		<ul>
+			<li>x koordinata je vrijednost mjeseca + pola paddinga</li>
+			<li>y je vrijednost trećeg kvartila</li>
+		</ul>
+		</li>
+		<li>visina i širina su također trivijalni
+		<ul>
+			<li>širinu stupca već imamo (umanjiti ćemo padding)</li>
+			<li>visina je razlika 1. i 3. kvartila ("provučena" kroz skalu)</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="c61d30c626f3cdeba245e73366b1aa78">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 660.495px; height: auto; left: 149.753px; top: 452.703px;" data-block-id="4bdc643d64f1ed251cb6efd00d659fee">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const kutije = sviStupci.append("rect")
+    .attr("x", d =&gt; xSkala(d.x0) + paddingStupci / 2)
+    .attr("y", d =&gt; ySkala(d[0].q3))
+    .attr("width", d =&gt; sirinaStupca(d) - paddingStupci)
+    .attr("height", d =&gt; ySkala(d[0].q1) - ySkala(d[0].q3))</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="6c1406aa556e7fd490ab72d439636820"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="e9bc6eec7acdf9b7a8eed82f8180bbbc">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje podataka</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="e4616c3341869f2be7fdce48d7e2b290">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="b2dc1ca14d7c2a9ac7840500b0f7d8ce">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 150.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="719ea734aa5321efdf2be9d3f0e8786e">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Linije medijana su jednostavne:
+	<ul>
+		<li>x1 i x2 su rubovi pravokutnika (pazite na padding)</li>
+		<li>
+<em>y</em> koordinate su iste u oba slučaja (medijan)</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="5ed90b48c8ba92a441681ec18c886987">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 600.285px; height: auto; left: 179.858px; top: 343.321px;" data-block-id="e2d6bcb05d5d8f372108e0245bfc291b">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const medijani = sviStupci.append("line")
+    .attr("class", "medijan")
+    .attr("x1", d =&gt; xSkala(d.x0) + paddingStupci / 2)
+    .attr("x2", d =&gt; xSkala(d.x1) - paddingStupci / 2)
+    .attr("y1", d =&gt; ySkala(d[0].median))
+    .attr("y2", d =&gt; ySkala(d[0].median))</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="ec11c35bf2d2a6dbaac8c54b53f043b7"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="526ba0d1cea2b3ee14cff532c4e1d83f">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje podataka</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="edb11068623cd8149166bb0544303956">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="0064bafc8141b576f5bffa6f54e4ab45">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 191.5px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="ddff2856a4c5e63422581f6d5387162c">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Iscrtati ćemo i "brkove" - horizontalne linije na kraju linija za minimalne i maksimalne vrijednosti
+	<ul>
+		<li>logika je slična liniji medijana
+		<ul>
+			<li>samo su <em>y</em> koordinate različite</li>
+			<li>možemo ih malo skratiti</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="9060e1dab7dddf0bcadee2318b81ba22">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 818.143px; height: auto; left: 70.9285px; top: 324.5px;" data-block-id="0939144b7d5b7706daf59a59c21da86d">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const minRasponi = sviStupci.append("line")
+    .attr("class", "linija")
+    .attr("x1", d =&gt; xSkala(d.x0) + sirinaStupca(d) * 0.35) // malo krace
+    .attr("x2", d =&gt; xSkala(d.x1) - sirinaStupca(d) * 0.35)
+    .attr("y1", d =&gt; ySkala(d[0].rasponMin))
+    .attr("y2", d =&gt; ySkala(d[0].rasponMin))
+  
+const maxRasponi = sviStupci.append("line")
+    .attr("class", "linija")
+    .attr("x1", d =&gt; xSkala(d.x0) + paddingStupci / 2 + sirinaStupca(d) * 0.3)
+    .attr("x2", d =&gt; xSkala(d.x1) - paddingStupci / 2 - sirinaStupca(d) * 0.3)
+    .attr("y1", d =&gt; ySkala(d[0].rasponMax))
+    .attr("y2", d =&gt; ySkala(d[0].rasponMax))</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="cca2d7f70386bf824f40c1bbf5423572"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="638863e9fc00c997e4efcc1a203221d5">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje podataka</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="2ea468c60411d5ca9372808de740e506">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="c8626b92c858f1ed903b15028fa7865e">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 240px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="1399a33b807844a38d18e0fa1327651b">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Iako nemamo puno <em>outlier </em>podataka, trebali bi i njih iscrtati</li>
+	<li>Ovaj put je logika malo složenija
+	<ul>
+		<li>svakom stupcu ćemo dodati novu grupu
+		<ul>
+			<li>translatirati ćemo je po <em>x </em>osi na sredinu stupca</li>
+		</ul>
+		</li>
+		<li>odabiremo sve <em>circle </em>elemente
+		<ul>
+			<li>pridružujemo <em>outlier</em> podatke
+			<ul>
+				<li>postavljamo središte po <em>y</em>  osi i radijus</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="54adec1b0fc5730a248739ba28f8ce06">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 854px; height: auto; left: 26px; top: 426.5px;" data-block-id="9351027fc69a3225d0029c7542be8fd1">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const outliers = sviStupci.append("g")
+    .attr("transform", d =&gt; `translate(${xSkala(d.x0) + sirinaStupca(d) / 2}, 0)`)
+  .selectAll("circle")
+    .data(d =&gt; d[0].outliers)
+    .enter().append("circle")
+      .attr("class", "outlier")
+      .attr("cy", d =&gt; ySkala(yAccessor(d)))
+      .attr("r", 2)</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="55ca5809fbc2767f851488662f9cf681"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="b293bc13a24b3dfa2f447936de254a9a">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje pomoćne grafike</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="fd2fc8219b3431fd5cc1238edf9bed2c">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="5c081420e7cf273cb96197ef48495a60">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 255px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="07d338ec70f85e496136cd815e1f6f0f">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Boxplot elementi su gotovi, sada ćemo dodati oznake
+	<ul>
+		<li>poviše svakog elementa možemo ispisati ime mjesece
+		<ul>
+			<li>treba nam <em>parser</em> za dobiti ime iz broja</li>
+			<li>zatim ćemo ga formatirati po želji</li>
+		</ul>
+		</li>
+		<li>dodati ćemo <em>text </em>element svakom stupcu
+		<ul>
+			<li>
+<em>x</em> pozicija je sredina pravokutnika</li>
+			<li>
+<em>y</em> je malo iznad početka</li>
+			<li>koristimo <em>transform</em> svojstvo</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="5613c45e1f77882707c803e26be2263d">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 881.095px; height: auto; left: 39.4525px; top: 451.5px;" data-block-id="c095b654e2eb4c337228c62601c8cfd2">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const parserMjeseca = d3.timeParse("%m")
+const formatMjeseca = d3.timeFormat("%b")
+const oznake = sviStupci.append("text")
+    .attr("class", "oznaka")
+    .attr("transform", d =&gt; `translate(${xSkala(d.x0) + sirinaStupca(d) / 2}, -15)`)
+    .text(d =&gt; formatMjeseca(parserMjeseca(d[0].mjesec)))</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-id="f7f241a84818ce82bc3edc37ba316cce"><div class="sl-block" data-block-type="text" style="width: 800px; left: 26px; top: 5.49985px; height: auto;" data-name="text-c29943" data-block-id="f08f5f5b925e102ec6cbe0fd08aa7c18">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: left; z-index: 11; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>Iscrtavanje pomoćne grafike</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 58px;" data-name="line-79aed3" data-block-id="57e992bad21a8f0a7da7b5d9938d8003">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="9d0ce72880033c36ed595d565daaf075">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 459px 132px; z-index: 12;">
+        <div class="sl-block" data-block-type="text" style="width: 918px; left: 0px; top: 77.5px; height: auto;" data-name="text-c5947b" data-block-id="57af49094fcac5e6f74f48ece70c7081">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0); font-size: 95%;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Zadnji korak je dodati i vertikalnu os
+	<ul>
+		<li>ponovno se radi o već dobro poznatom postupku...</li>
+	</ul>
+	</li>
+</ul>
+</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 58.9994px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-df16f2" data-block-id="2f78d3723c82c5816983a8b32d83e37f">
+    <div class="sl-block-style" style="z-index: 10; opacity: 0.06;">
+        <div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1920" data-natural-height="1283" data-crop-x="0" data-crop-y="0.809154" data-crop-width="1" data-crop-height="0.091971" style="left: 0px; top: -519px; width: 960px; height: 642px;" data-lazy-loaded="" data-src="vp_v08/67d7f1e5ca5bfcf6bd711824b5c27f4c"></div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-37d8aa" style="width: 520.548px; height: auto; left: 219.726px; top: 251px;" data-block-id="6e784e2e4d79289705ad7e95daa7c6fe">
+    <div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgba(0, 179, 11, 0.75) 5px 5px 2px) opacity(100%);">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="obsidian" data-code-frame="osx" style="z-index: 16; border-width: 3px; border-color: rgb(0, 179, 11);" data-code-autoheight="true" data-fragment-index="0">
+            <pre style="font-size: 16px; line-height: 19px;" class="javascript"><code data-line-numbers="" style="padding: 15px;">const yOsGenerator = d3.axisLeft()
+    .scale(ySkala)
+    .ticks(4)
+    
+const yOs = granice.append("g")
+    .attr("class", "y-os")
+    .call(yOsGenerator)
+    
+const yOsOznaka = yOs.append("text")
+    .attr("class", "y-os-oznaka")
+    .attr("x", -dimenzije.grVisina / 2)
+    .attr("y", -dimenzije.margine.left + 10)
+    .html("Maksimalna Temperatura (&amp;deg;C)")</code></pre>
+        </div>
+    </div>
+</div>
+</section><section data-background-image="vp_v08/9c17630ce13452725ec8687daa2244c0" data-background-opacity="0.2" data-id="8f0e7abb1a011f8c1ba0756bfe29407c"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-name="text-c29943" data-block-id="1b9cf2b82b604820e3d4daa75358f0fe">
+    <div class="sl-block-content" data-placeholder-tag="h2" style="text-align: center; z-index: 10; font-size: 65%; color: rgb(34, 34, 34);" data-placeholder-text="Text">
+<h2><strong>ZADATAK</strong></h2>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 54px;" data-name="line-79aed3" data-block-id="4229dda831b9903e12489e3b879e4b43">
+    <div class="sl-block-content" data-line-x1="0" data-line-y1="0.0005000000000023874" data-line-x2="960" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="960" height="1" viewbox="0 0 960 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0.0005000000000023874" x2="960" y2="0"></line></svg></div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-4cebe8" style="height: auto;" data-block-id="4d5c4a2dc4e0e920d1c25fc50f6e5e7a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 480px 330.644px; z-index: 11;">
+        <div class="sl-block" data-block-type="text" style="width: 936.046px; left: 11.977px; top: 164.144px; height: auto;" data-name="text-c5947b" data-block-id="57d169688953290363526167f84ec04e">
+            <div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; border-width: 4px; line-height: 1.313; border-color: rgb(0, 0, 0); padding: 10px; color: rgb(0, 0, 0);" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<ul>
+	<li>Nadogradite postojeću vizualizaciju:
+	<ul>
+		<li>dodajte mogućnost mijenjanja metrike putem sučelja</li>
+		<li>animirajte promjene metrike:
+		<ul>
+			<li>promjena izgleda pravokutnika i linija</li>
+		</ul>
+		</li>
+		<li>dodajte interakcije na graf
+		<ul>
+			<li>prelaskom miša preko nekog elementa ispišite dodatne podatke o tom elementu</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+            <em>
+            </em>
+        </div>
+        <em>
+
+        </em>
+    </div>
+    <em>
+    </em>
+</div>
+<em>
+
+
+    
+    
+</em>
+</section><section data-id="c7596487d9f244da905e05cf0e76e427" data-background-image="vp_v08/80c6082b95f0da4c38268e45bbdd263e" data-background-opacity="0.3"><div class="sl-block" data-block-type="text" style="width: 876px; left: 41px; top: 178px; height: auto;" data-block-id="1eebee16a1c64bc0c535c07ba97ff585" data-name="text-55fdd4"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11; padding: 20px; line-height: 1.04;" data-has-line-height="" dir="ui" data-placeholder-text="Text">
+<h1>Hvala na pažnji!</h1>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-a5c0c7" style="width: auto; height: auto; left: 160px; top: 267.797px;" data-block-id="33f92e275b29906facb4817fd7b77441"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="640" data-line-y2="0" data-line-color="#00b30b" data-line-start-type="none" data-line-end-type="none" style="z-index: 10;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="640" height="1" viewbox="0 0 640 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="640" y2="0"></line><line class="line-element" stroke="#00b30b" stroke-width="4" x1="0" y1="0" x2="640" y2="0"></line></svg></div></div></section></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2517844,"slug":"vp_v08","title":"vp_v08","description":"Vizualizacija Podataka -Vježba 08","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":"2020-11-27T13:47:48.491Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/436462fc6b153f6cb34747c26ea8129f/thumb.jpg?1670783606","view_count":0,"user":{"id":1363939,"username":"gzaharija","name":"Goran Zaharija","description":"","thumbnail_url":"https://lh5.googleusercontent.com/-AqW8L_hCWdY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnGN5x7VggKeiiZ5zU8LIlPw4Thlw/photo.jpg","account_type":"lite","team_id":null,"settings":{"id":5710954,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"slide","theme_id":null,"theme_font":"merriweather","theme_color":"silver-green","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":23,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1670916184036,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"linear","upsizing_enabled":true,"notes":{"c34425e6a5d1763ca6a71781677f0112":"","f983f7445a8cbe89dfd9ae67e07fb21b":"","f1b24faa29e4587c93d6d2bdaa0d05d4":"","07b517c898b6a58d741901cece914588":"","be23eb75799fa0a6e5e4176a45483c01":"","bf6bee7726f7d711efab81cbbffd34e2":"","e25a2f509cd40677e833243b38d58469":"","e5ad1468f389fe2c84f40c7ec7ca63e2":"","f95fe71cd18a6965d107e31ff71b2638":"","615c4969a96995de7ade317fd1221fc1":"","2e6e78c71055336613c1274d5aafc65c":"","c7596487d9f244da905e05cf0e76e427":"","b32032a43f89a8e5fa404cac7b0ccbbf":"","29aece7d460f48342c3c7ba7942621d7":"","20410d9d803df2c53a4ca11c1937d6c8":"","99e5fb231a5aae4f5de5790432e6afeb":"","d5a6c55a2713f7f1fa7822027f386897":"","10ab16e65becac18cc3a5fd537bbfdad":"","412436b66d3afcc2429be09735864390":"","63d7d86d225142dad5f977b409958b83":"","23df7cac2af231396165e1eb2909c234":"","f70e1cdb5245338466e3d447e0ecaf4a":"","5cf4e38e4e941967733a710a7c551ddf":"","ee16d03c297f70094ba20abc32644711":"","ba4cbd8129e1deb68a618a82fdf9c5bf":"","26e7bab17b072441b5d936f3be1bd8a9":"","950932f3570696738675c24c00b402c2":"","627ed4b02167a07f461ab60507c2de48":"","4c351c69e0ada7f4e182a53607ac5674":"","d2140a1717e06501df444c00c78c3baf":"","be47d02ad2a04c635ce15af0ebf31cc8":"","84d836ffc26a1ef474c2a0847afa82e6":"","9b97fa75715e2b12241dee3bcd0dcbb6":"","83742d4a782959479ba50439cf915423":"","24f026484510a6abf241f96e50b4a625":"","6802cd0888e714aa35ae895f94b800ae":"","1f768d151e431efdbe81758f042817da":"","ba1d75634158fc66f766e4bb2ef11a5f":"","992b741a847bc1cd7c4eecdcaa5b2a21":"","9021d20e429a7ecac4abc96da35e8405":"","9719df76d79497407a64e29cd692504f":"","b7663ac32b0699bd435c6b1c72cdb2ff":"","74d356e0e868a1becfded57aac8680a2":"","b7a63f5dd6931f8f5551d4340acba840":"","05a932cf8d7986651b57958d09ad6f41":"","3c7619f0a5ea7fb6b2c009c1862f9661":"","8e5fb8fd4601fa5b83cb10f591dedba0":"","22fa703bfbc923ecf0e9056794ebbb57":"","81c3383711d58ac45d4da45ef32ce1d4":"","f7b7e445c5b2331ba464c386c4a7e9d3":"","85c9815894db732fb205449ba917baa3":"","2daf1e698ee02c601f4752af6ceaa451":"","01e1325280e7b74d69daf2fee103ad65":"","6ea6e1f41e977f7ec3989afcec133c5f":"","a3c22906aa05b87810f3c8321a9e5aa9":"","5619a9de90fa2e64cf1812ec93767653":"","5de9280aa403e563645152cd39d1403d":"","22764dc6b061d9144fe7aac1ae11e312":"","de8e50e6e9517d0dbdb7419d5d7b609c":"","68711d5fbf2fd87f72b7cf66db727207":"","04231cb21096261122ce950f20b40953":"","6c1c55bf5ef65293b6a10aa33403155f":"","770d7cb94201746a24bf5c3e19a50c91":"","9c4714327a3327b4f87f8e1b84172085":"","550df6dd0f690295ad6b6a2710b3b77a":"","b6d4db24bc60bb521b005fd1369205ae":"","9cba137b9044a859eda8a9b56a86de17":"","162bbb7e40fb322c30d7d447873bba78":"","b97db3d74a66aad30981e68efdbd5654":"","7ff310999b762dc52a87263fc6982f86":"","96616c630747b7240d378be57571ec62":"","f30d523472d205ba305b656c8185f0e3":"","8780393a389b009a00c8cfa2bde66b59":"","e23af754c4eb54900805edf68d4765fc":"","f566cd51bb0e5a95d064d32db5bf1b18":"","59d4bf2a9794250e98452e14e2122745":"","1c8c187d55d09b2649716ebcf126c16d":"","b7400bd43bca0e0df39b344592f54be1":"","26f0e925681fd0303946b28c0a4fad41":"","8c853eaa7f06286d61e8cf9ecb6e8f37":"","2e0a45e0fab293c84ba51272dab50c64":"","b33b117185920f04047eb897fb8ac2c0":"","48188ed017deceec5b70f81b2f3cdceb":"","204fed03fa540061c41135ab89d76573":"","79b85ca1a3378691d4da8a562c259190":"","3ee3c5d4ee8c2cee65a5a7fa732a74be":"","ea99055c7943ed427885fbace459d85c":"","79d7c85cba9a0ba8e2eb0279cf1ff708":"","8f9a1787b61e89af6a62a00eae267bf8":"","d5860e561d35308ba02cc0ac504b15f5":"","aeef90d184566838e4b21be5f737695c":"","4c860b745da6d065f6306f8a68827e8a":"","2880c586ce7d49bde2ec13328741e87e":"","a776e5ab6118bc816071e7fe82940a08":"","86e8c0fcaba8656d37055d19db07d9a2":"","3f08ab38a48ce6c27ad325098b95feda":"","c69727b579ed45047df1611efda70649":"","2d7c81c0cc693a54175bac4ef2f307f5":"","5571d77568356506427677e45bda8b83":"","57fe362e0bf24913ce0c0854cbcf6a54":"","b877444fd21a55ad2e3c8870716327ce":"","00ac37b1080e468a1bd773416197c7cd":"","69b4ad64a11c6b0dfad4a92021b438f5":"","54d7f067fe5027f51a333b5cbdd8d38b":"","43bac526f07a74bea4ac00b619479852":"","8ff7b732b381f2f5c33214718ed11ae2":"","5c8602a3439769e48a52132f269c3fdd":"","433dbb2b1780ff2b1b19426aa6ca3e0a":"","fa445263be6ff98fc3e66ede3345e90d":"","4f1abd1b98ed008b6e086da6a4755fd1":"","e18dc787e27c7a8280ee9a41fad24be9":"","cc9b2dd3f10e332272a6490d74e98f18":"","81071283ebedc16a4930531d8530bb51":"","62472fd2f0d2ee2240fd946636ecee6a":"","f649ac4c07244d5ac033d331f7ab5d02":"","823a1d69e9371c5918bcc871395504b4":"","f894145ed7d42f756584fa7d0ff721e4":"","422fc35b83fe9a35833b955d753b522e":"","803c465da682f7426a56ef1de36780bb":"","3bbcfd59d8085756f9f812c30922574c":"","3769faa62ffe1c0a962294c9bce18b2e":"","1f86c46cacde2d3f13fc23e76ee821ce":"","c8ebba67ab7be1f81733d9d7744a3ca0":"","9994c71c746498131a9c9707cd93d9d6":"","66336dd68e4c8526e01541634d54b195":"","7542d5f1ad180e61b8a012b6b50f67c0":"","786ce5906bb839bbd8d0f7dd45389b83":"","c1b6cab1b59bece2aedea4bf24b8090f":"","2be8302baefba1171402e66bead4534e":"","756188b166292fabd7cd17f8a54e2c19":"","bd9e5dfd53a72919607c6dbafec0e284":"","c1c9ca853a7e7626076b6a3b185a1b8f":"","15dcbea8ce3e89c95e4ae570bda40daf":"","c4b6be76fcdc5cbfe0b80a52a16f1184":"","1e1d24ff4e5eb873935ec00ed9a110aa":"","1e4ba1fc0ed47cb6d6216c0d3cfd96b4":"","9babfc1f324660b43bbe9cb3fa8f2675":"","f6ef49266f575b38115e2a8b0f29a5e2":"","c782f480cee0588f93a494caf1a7a20c":"","87edf3815a5955f81b6d998d6b364302":"","8ad7ada5ba447053c3c0ba09c0006a74":"","c782b58445a9f4cbad79a9799d6af7a6":"","486078241f680640e17f4371ff635b8d":"","f2b42d221eda56b153beaf2e20a06b19":"","9ad4320e7eb976cdc19e98365a1a4cf1":"","d77f3376a12923c4a5a750378b502202":"","4cb9643a05d9a05e004fc3af4a3c02e2":"","bb31e6a3f1ecd23f14f4c060577f1188":"","d02c79d01511c3b0709bd99757a6b098":"","0411322cb900b29c3b6ea1943c2b234f":"","f291c070c8397a3306c8a5752752c59e":"","480a3f9d2fc65c1bd54e3fef25dabd06":"","0f6a80dbd87bd07da820e8916362d4b0":"","31fab644214adcabf58fef48e619ae77":"","61b0e840481db2ef3807b7785d51e9f2":"","a10861afd9e882730ad0ef0fea248c46":"","f15bc2106f8487fcb374c554c45b1ccf":"","cc1427954c99cdabd57809113a503e75":"","dbcf1f90eb5da5a92df185beef99f49d":"","15c7834397fcac09e82f9b12a857f196":"","353a9b2d8ada42eaf456646d08f9b159":"","3133428dd4b0d2bb1dc1a15153517659":"","803756d8875c05612e5b8275e70d51f2":"","5c6fe3edaa593bae03d62224c2b5cd5f":"","d964494c8f93394166a1981f6e1b473f":"","68e977591755d6877009d027a3fea5f5":"","3c21f56a2fa010b19c381bfcf8fcb5b4":"","8d595efb4f6b0aa5ae736c8d7edc5345":"","53c80de5833786d7b76f72bb24d18383":"","54a1913d63e2e90fdc441394f87adc10":"","b4a2e9fd9b1814a3be9a6ea238e5b118":"","ffd5b007dcb0c3b5af8e713090217728":"","0be1d9ae103ec7a2a0b404172c25519e":"","a06a364cc977feea9c9fccf7697d8f59":"","d9a355c8a435c886cc75905e0d890933":"","4fb01786a3dc0494fc763bfc852da75a":"","a978b52c338596de77fe9f16d3b4cf4d":"","fb7178e2460c26869f27fc92f45ba1b0":"","d02d0a95050daf406ada27f659af8f2e":"","6c1406aa556e7fd490ab72d439636820":"","ec11c35bf2d2a6dbaac8c54b53f043b7":"","cca2d7f70386bf824f40c1bbf5423572":"","55ca5809fbc2767f851488662f9cf681":"","f7f241a84818ce82bc3edc37ba316cce":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = '../lib/fonts/';
+		</script>
+
+		<script src="../lib/reveal.js"></script>
+		<script src="../lib/reveal-plugins.js"></script>
+		<script src="../lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "linear",
+
+				transition: "slide",
+				backgroundTransition: "fade",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
